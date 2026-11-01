@@ -1,0 +1,5633 @@
+{
+  "k": 5,
+  "top_k_image": 2,
+  "max_images_in_context": 1,
+  "configured_min_visual_score": 0.4,
+  "variants": {
+    "text_only": {
+      "hit@5": 1.0,
+      "precision@5": 0.5765,
+      "recall@5": 0.9706,
+      "mrr": 0.9314,
+      "visual_hit": 0.0,
+      "visual_in_context": 0.0,
+      "questions_with_irrelevant_image_in_context": 0,
+      "images_in_context_total": 0,
+      "mean_retrieval_latency_s": 0.1239,
+      "n_answerable": 17,
+      "n_visual_questions": 8
+    },
+    "multimodal_pixel": {
+      "hit@5": 1.0,
+      "precision@5": 0.5765,
+      "recall@5": 0.9706,
+      "mrr": 0.9314,
+      "visual_hit": 1.0,
+      "visual_in_context": 0.75,
+      "questions_with_irrelevant_image_in_context": 11,
+      "images_in_context_total": 18,
+      "mean_retrieval_latency_s": 0.0426,
+      "n_answerable": 17,
+      "n_visual_questions": 8
+    },
+    "multimodal_fused_ungated": {
+      "hit@5": 1.0,
+      "precision@5": 0.5765,
+      "recall@5": 0.9706,
+      "mrr": 0.9314,
+      "visual_hit": 1.0,
+      "visual_in_context": 0.75,
+      "questions_with_irrelevant_image_in_context": 11,
+      "images_in_context_total": 18,
+      "mean_retrieval_latency_s": 0.0468,
+      "n_answerable": 17,
+      "n_visual_questions": 8
+    },
+    "multimodal_fused_gated@0.4": {
+      "hit@5": 1.0,
+      "precision@5": 0.5765,
+      "recall@5": 0.9706,
+      "mrr": 0.9314,
+      "visual_hit": 0.75,
+      "visual_in_context": 0.75,
+      "questions_with_irrelevant_image_in_context": 0,
+      "images_in_context_total": 6,
+      "mean_retrieval_latency_s": 0.0435,
+      "n_answerable": 17,
+      "n_visual_questions": 8
+    },
+    "multimodal_fused_gated@0.3": {
+      "hit@5": 1.0,
+      "precision@5": 0.5765,
+      "recall@5": 0.9706,
+      "mrr": 0.9314,
+      "visual_hit": 0.75,
+      "visual_in_context": 0.75,
+      "questions_with_irrelevant_image_in_context": 5,
+      "images_in_context_total": 11,
+      "mean_retrieval_latency_s": 0.0489,
+      "n_answerable": 17,
+      "n_visual_questions": 8
+    },
+    "multimodal_fused_gated@0.35": {
+      "hit@5": 1.0,
+      "precision@5": 0.5765,
+      "recall@5": 0.9706,
+      "mrr": 0.9314,
+      "visual_hit": 0.75,
+      "visual_in_context": 0.75,
+      "questions_with_irrelevant_image_in_context": 1,
+      "images_in_context_total": 7,
+      "mean_retrieval_latency_s": 0.0468,
+      "n_answerable": 17,
+      "n_visual_questions": 8
+    },
+    "multimodal_fused_gated@0.45": {
+      "hit@5": 1.0,
+      "precision@5": 0.5765,
+      "recall@5": 0.9706,
+      "mrr": 0.9314,
+      "visual_hit": 0.625,
+      "visual_in_context": 0.625,
+      "questions_with_irrelevant_image_in_context": 0,
+      "images_in_context_total": 5,
+      "mean_retrieval_latency_s": 0.0452,
+      "n_answerable": 17,
+      "n_visual_questions": 8
+    },
+    "multimodal_fused_gated@0.5": {
+      "hit@5": 1.0,
+      "precision@5": 0.5765,
+      "recall@5": 0.9706,
+      "mrr": 0.9314,
+      "visual_hit": 0.125,
+      "visual_in_context": 0.125,
+      "questions_with_irrelevant_image_in_context": 0,
+      "images_in_context_total": 1,
+      "mean_retrieval_latency_s": 0.0419,
+      "n_answerable": 17,
+      "n_visual_questions": 8
+    }
+  },
+  "per_query": {
+    "q01": {
+      "text_only": {
+        "hit": true,
+        "precision": 0.8,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "top_text_similarity": 0.6367,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 1.4758
+      },
+      "multimodal_pixel": {
+        "hit": true,
+        "precision": 0.8,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "top_text_similarity": 0.6367,
+        "images": [
+          {
+            "label": "Table 3",
+            "score": 0.122,
+            "pixel": 0.122
+          },
+          {
+            "label": "Table 1",
+            "score": 0.121,
+            "pixel": 0.121
+          }
+        ],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 1,
+        "latency_s": 0.034
+      },
+      "multimodal_fused_ungated": {
+        "hit": true,
+        "precision": 0.8,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "top_text_similarity": 0.6367,
+        "images": [
+          {
+            "label": "Table 3",
+            "score": 0.3124,
+            "pixel": 0.122,
+            "caption": 0.5029
+          },
+          {
+            "label": "Figure 1",
+            "score": 0.2675,
+            "pixel": 0.0513,
+            "caption": 0.4836
+          }
+        ],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 1,
+        "latency_s": 0.0375
+      },
+      "multimodal_fused_gated@0.4": {
+        "hit": true,
+        "precision": 0.8,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "top_text_similarity": 0.6367,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0413
+      },
+      "multimodal_fused_gated@0.3": {
+        "hit": true,
+        "precision": 0.8,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "top_text_similarity": 0.6367,
+        "images": [
+          {
+            "label": "Table 3",
+            "score": 0.3124,
+            "pixel": 0.122,
+            "caption": 0.5029
+          }
+        ],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 1,
+        "latency_s": 0.0392
+      },
+      "multimodal_fused_gated@0.35": {
+        "hit": true,
+        "precision": 0.8,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "top_text_similarity": 0.6367,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0507
+      },
+      "multimodal_fused_gated@0.45": {
+        "hit": true,
+        "precision": 0.8,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "top_text_similarity": 0.6367,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0362
+      },
+      "multimodal_fused_gated@0.5": {
+        "hit": true,
+        "precision": 0.8,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "top_text_similarity": 0.6367,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0355
+      }
+    },
+    "q02": {
+      "text_only": {
+        "hit": true,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            2,
+            2
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            5,
+            5
+          ]
+        ],
+        "top_text_similarity": 0.7765,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0369
+      },
+      "multimodal_pixel": {
+        "hit": true,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            2,
+            2
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            5,
+            5
+          ]
+        ],
+        "top_text_similarity": 0.7765,
+        "images": [
+          {
+            "label": "Figure 2",
+            "score": 0.1557,
+            "pixel": 0.1557
+          },
+          {
+            "label": "Figure 1",
+            "score": 0.1192,
+            "pixel": 0.1192
+          }
+        ],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 1,
+        "latency_s": 0.0375
+      },
+      "multimodal_fused_ungated": {
+        "hit": true,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            2,
+            2
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            5,
+            5
+          ]
+        ],
+        "top_text_similarity": 0.7765,
+        "images": [
+          {
+            "label": "Figure 2",
+            "score": 0.3013,
+            "pixel": 0.1557,
+            "caption": 0.4469
+          },
+          {
+            "label": "Table 1",
+            "score": 0.0922,
+            "pixel": -0.0168,
+            "caption": 0.2012
+          }
+        ],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 1,
+        "latency_s": 0.0513
+      },
+      "multimodal_fused_gated@0.4": {
+        "hit": true,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            2,
+            2
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            5,
+            5
+          ]
+        ],
+        "top_text_similarity": 0.7765,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0415
+      },
+      "multimodal_fused_gated@0.3": {
+        "hit": true,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            2,
+            2
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            5,
+            5
+          ]
+        ],
+        "top_text_similarity": 0.7765,
+        "images": [
+          {
+            "label": "Figure 2",
+            "score": 0.3013,
+            "pixel": 0.1557,
+            "caption": 0.4469
+          }
+        ],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 1,
+        "latency_s": 0.0545
+      },
+      "multimodal_fused_gated@0.35": {
+        "hit": true,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            2,
+            2
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            5,
+            5
+          ]
+        ],
+        "top_text_similarity": 0.7765,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0579
+      },
+      "multimodal_fused_gated@0.45": {
+        "hit": true,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            2,
+            2
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            5,
+            5
+          ]
+        ],
+        "top_text_similarity": 0.7765,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0412
+      },
+      "multimodal_fused_gated@0.5": {
+        "hit": true,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            2,
+            2
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            5,
+            5
+          ]
+        ],
+        "top_text_similarity": 0.7765,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0396
+      }
+    },
+    "q03": {
+      "text_only": {
+        "hit": true,
+        "precision": 1.0,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        "top_text_similarity": 0.8116,
+        "images": [],
+        "visual_hit": false,
+        "visual_in_context": false,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0375
+      },
+      "multimodal_pixel": {
+        "hit": true,
+        "precision": 1.0,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        "top_text_similarity": 0.8116,
+        "images": [
+          {
+            "label": "Figure 2",
+            "score": 0.252,
+            "pixel": 0.252
+          },
+          {
+            "label": "Table 3",
+            "score": 0.0867,
+            "pixel": 0.0867
+          }
+        ],
+        "visual_hit": true,
+        "visual_in_context": true,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0368
+      },
+      "multimodal_fused_ungated": {
+        "hit": true,
+        "precision": 1.0,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        "top_text_similarity": 0.8116,
+        "images": [
+          {
+            "label": "Figure 2",
+            "score": 0.4848,
+            "pixel": 0.252,
+            "caption": 0.7176
+          },
+          {
+            "label": "Table 1",
+            "score": 0.1638,
+            "pixel": 0.071,
+            "caption": 0.2567
+          }
+        ],
+        "visual_hit": true,
+        "visual_in_context": true,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0394
+      },
+      "multimodal_fused_gated@0.4": {
+        "hit": true,
+        "precision": 1.0,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        "top_text_similarity": 0.8116,
+        "images": [
+          {
+            "label": "Figure 2",
+            "score": 0.4848,
+            "pixel": 0.252,
+            "caption": 0.7176
+          }
+        ],
+        "visual_hit": true,
+        "visual_in_context": true,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0374
+      },
+      "multimodal_fused_gated@0.3": {
+        "hit": true,
+        "precision": 1.0,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        "top_text_similarity": 0.8116,
+        "images": [
+          {
+            "label": "Figure 2",
+            "score": 0.4848,
+            "pixel": 0.252,
+            "caption": 0.7176
+          }
+        ],
+        "visual_hit": true,
+        "visual_in_context": true,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0418
+      },
+      "multimodal_fused_gated@0.35": {
+        "hit": true,
+        "precision": 1.0,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        "top_text_similarity": 0.8116,
+        "images": [
+          {
+            "label": "Figure 2",
+            "score": 0.4848,
+            "pixel": 0.252,
+            "caption": 0.7176
+          }
+        ],
+        "visual_hit": true,
+        "visual_in_context": true,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0582
+      },
+      "multimodal_fused_gated@0.45": {
+        "hit": true,
+        "precision": 1.0,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        "top_text_similarity": 0.8116,
+        "images": [
+          {
+            "label": "Figure 2",
+            "score": 0.4848,
+            "pixel": 0.252,
+            "caption": 0.7176
+          }
+        ],
+        "visual_hit": true,
+        "visual_in_context": true,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0375
+      },
+      "multimodal_fused_gated@0.5": {
+        "hit": true,
+        "precision": 1.0,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        "top_text_similarity": 0.8116,
+        "images": [],
+        "visual_hit": false,
+        "visual_in_context": false,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0373
+      }
+    },
+    "q04": {
+      "text_only": {
+        "hit": true,
+        "precision": 0.8,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            7,
+            7
+          ]
+        ],
+        "top_text_similarity": 0.7452,
+        "images": [],
+        "visual_hit": false,
+        "visual_in_context": false,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0327
+      },
+      "multimodal_pixel": {
+        "hit": true,
+        "precision": 0.8,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            7,
+            7
+          ]
+        ],
+        "top_text_similarity": 0.7452,
+        "images": [
+          {
+            "label": "Figure 2",
+            "score": 0.3107,
+            "pixel": 0.3107
+          },
+          {
+            "label": "Figure 1",
+            "score": 0.2098,
+            "pixel": 0.2098
+          }
+        ],
+        "visual_hit": true,
+        "visual_in_context": true,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0351
+      },
+      "multimodal_fused_ungated": {
+        "hit": true,
+        "precision": 0.8,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            7,
+            7
+          ]
+        ],
+        "top_text_similarity": 0.7452,
+        "images": [
+          {
+            "label": "Figure 2",
+            "score": 0.5049,
+            "pixel": 0.3107,
+            "caption": 0.699
+          },
+          {
+            "label": "Figure 1",
+            "score": 0.1974,
+            "pixel": 0.2098,
+            "caption": 0.1851
+          }
+        ],
+        "visual_hit": true,
+        "visual_in_context": true,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0389
+      },
+      "multimodal_fused_gated@0.4": {
+        "hit": true,
+        "precision": 0.8,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            7,
+            7
+          ]
+        ],
+        "top_text_similarity": 0.7452,
+        "images": [
+          {
+            "label": "Figure 2",
+            "score": 0.5049,
+            "pixel": 0.3107,
+            "caption": 0.699
+          }
+        ],
+        "visual_hit": true,
+        "visual_in_context": true,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0365
+      },
+      "multimodal_fused_gated@0.3": {
+        "hit": true,
+        "precision": 0.8,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            7,
+            7
+          ]
+        ],
+        "top_text_similarity": 0.7452,
+        "images": [
+          {
+            "label": "Figure 2",
+            "score": 0.5049,
+            "pixel": 0.3107,
+            "caption": 0.699
+          }
+        ],
+        "visual_hit": true,
+        "visual_in_context": true,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0395
+      },
+      "multimodal_fused_gated@0.35": {
+        "hit": true,
+        "precision": 0.8,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            7,
+            7
+          ]
+        ],
+        "top_text_similarity": 0.7452,
+        "images": [
+          {
+            "label": "Figure 2",
+            "score": 0.5049,
+            "pixel": 0.3107,
+            "caption": 0.699
+          }
+        ],
+        "visual_hit": true,
+        "visual_in_context": true,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0471
+      },
+      "multimodal_fused_gated@0.45": {
+        "hit": true,
+        "precision": 0.8,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            7,
+            7
+          ]
+        ],
+        "top_text_similarity": 0.7452,
+        "images": [
+          {
+            "label": "Figure 2",
+            "score": 0.5049,
+            "pixel": 0.3107,
+            "caption": 0.699
+          }
+        ],
+        "visual_hit": true,
+        "visual_in_context": true,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0368
+      },
+      "multimodal_fused_gated@0.5": {
+        "hit": true,
+        "precision": 0.8,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            7,
+            7
+          ]
+        ],
+        "top_text_similarity": 0.7452,
+        "images": [
+          {
+            "label": "Figure 2",
+            "score": 0.5049,
+            "pixel": 0.3107,
+            "caption": 0.699
+          }
+        ],
+        "visual_hit": true,
+        "visual_in_context": true,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0368
+      }
+    },
+    "q05": {
+      "text_only": {
+        "hit": true,
+        "precision": 0.4,
+        "recall": 0.5,
+        "mrr": 0.5,
+        "retrieved_pages": [
+          [
+            2,
+            2
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "top_text_similarity": 0.6235,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0337
+      },
+      "multimodal_pixel": {
+        "hit": true,
+        "precision": 0.4,
+        "recall": 0.5,
+        "mrr": 0.5,
+        "retrieved_pages": [
+          [
+            2,
+            2
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "top_text_similarity": 0.6235,
+        "images": [
+          {
+            "label": "Table 1",
+            "score": 0.1096,
+            "pixel": 0.1096
+          },
+          {
+            "label": "Figure 2",
+            "score": 0.0919,
+            "pixel": 0.0919
+          }
+        ],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 1,
+        "latency_s": 0.0365
+      },
+      "multimodal_fused_ungated": {
+        "hit": true,
+        "precision": 0.4,
+        "recall": 0.5,
+        "mrr": 0.5,
+        "retrieved_pages": [
+          [
+            2,
+            2
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "top_text_similarity": 0.6235,
+        "images": [
+          {
+            "label": "Table 3",
+            "score": 0.2875,
+            "pixel": 0.0688,
+            "caption": 0.5063
+          },
+          {
+            "label": "Figure 1",
+            "score": 0.2236,
+            "pixel": 0.0731,
+            "caption": 0.3741
+          }
+        ],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 1,
+        "latency_s": 0.0406
+      },
+      "multimodal_fused_gated@0.4": {
+        "hit": true,
+        "precision": 0.4,
+        "recall": 0.5,
+        "mrr": 0.5,
+        "retrieved_pages": [
+          [
+            2,
+            2
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "top_text_similarity": 0.6235,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0392
+      },
+      "multimodal_fused_gated@0.3": {
+        "hit": true,
+        "precision": 0.4,
+        "recall": 0.5,
+        "mrr": 0.5,
+        "retrieved_pages": [
+          [
+            2,
+            2
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "top_text_similarity": 0.6235,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0489
+      },
+      "multimodal_fused_gated@0.35": {
+        "hit": true,
+        "precision": 0.4,
+        "recall": 0.5,
+        "mrr": 0.5,
+        "retrieved_pages": [
+          [
+            2,
+            2
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "top_text_similarity": 0.6235,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0381
+      },
+      "multimodal_fused_gated@0.45": {
+        "hit": true,
+        "precision": 0.4,
+        "recall": 0.5,
+        "mrr": 0.5,
+        "retrieved_pages": [
+          [
+            2,
+            2
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "top_text_similarity": 0.6235,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0382
+      },
+      "multimodal_fused_gated@0.5": {
+        "hit": true,
+        "precision": 0.4,
+        "recall": 0.5,
+        "mrr": 0.5,
+        "retrieved_pages": [
+          [
+            2,
+            2
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "top_text_similarity": 0.6235,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0377
+      }
+    },
+    "q06": {
+      "text_only": {
+        "hit": true,
+        "precision": 0.6,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            5,
+            5
+          ]
+        ],
+        "top_text_similarity": 0.8398,
+        "images": [],
+        "visual_hit": false,
+        "visual_in_context": false,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0408
+      },
+      "multimodal_pixel": {
+        "hit": true,
+        "precision": 0.6,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            5,
+            5
+          ]
+        ],
+        "top_text_similarity": 0.8398,
+        "images": [
+          {
+            "label": "Table 1",
+            "score": 0.2011,
+            "pixel": 0.2011
+          },
+          {
+            "label": "Figure 1",
+            "score": 0.177,
+            "pixel": 0.177
+          }
+        ],
+        "visual_hit": true,
+        "visual_in_context": false,
+        "irrelevant_images_in_context": 1,
+        "latency_s": 0.0468
+      },
+      "multimodal_fused_ungated": {
+        "hit": true,
+        "precision": 0.6,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            5,
+            5
+          ]
+        ],
+        "top_text_similarity": 0.8398,
+        "images": [
+          {
+            "label": "Table 1",
+            "score": 0.3106,
+            "pixel": 0.2011,
+            "caption": 0.4201
+          },
+          {
+            "label": "Figure 1",
+            "score": 0.2449,
+            "pixel": 0.177,
+            "caption": 0.3129
+          }
+        ],
+        "visual_hit": true,
+        "visual_in_context": false,
+        "irrelevant_images_in_context": 1,
+        "latency_s": 0.054
+      },
+      "multimodal_fused_gated@0.4": {
+        "hit": true,
+        "precision": 0.6,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            5,
+            5
+          ]
+        ],
+        "top_text_similarity": 0.8398,
+        "images": [],
+        "visual_hit": false,
+        "visual_in_context": false,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0408
+      },
+      "multimodal_fused_gated@0.3": {
+        "hit": true,
+        "precision": 0.6,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            5,
+            5
+          ]
+        ],
+        "top_text_similarity": 0.8398,
+        "images": [
+          {
+            "label": "Table 1",
+            "score": 0.3106,
+            "pixel": 0.2011,
+            "caption": 0.4201
+          }
+        ],
+        "visual_hit": false,
+        "visual_in_context": false,
+        "irrelevant_images_in_context": 1,
+        "latency_s": 0.0487
+      },
+      "multimodal_fused_gated@0.35": {
+        "hit": true,
+        "precision": 0.6,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            5,
+            5
+          ]
+        ],
+        "top_text_similarity": 0.8398,
+        "images": [],
+        "visual_hit": false,
+        "visual_in_context": false,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0524
+      },
+      "multimodal_fused_gated@0.45": {
+        "hit": true,
+        "precision": 0.6,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            5,
+            5
+          ]
+        ],
+        "top_text_similarity": 0.8398,
+        "images": [],
+        "visual_hit": false,
+        "visual_in_context": false,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0409
+      },
+      "multimodal_fused_gated@0.5": {
+        "hit": true,
+        "precision": 0.6,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            5,
+            5
+          ]
+        ],
+        "top_text_similarity": 0.8398,
+        "images": [],
+        "visual_hit": false,
+        "visual_in_context": false,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0408
+      }
+    },
+    "q07": {
+      "text_only": {
+        "hit": true,
+        "precision": 0.6,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            3,
+            3
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "top_text_similarity": 0.5072,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0448
+      },
+      "multimodal_pixel": {
+        "hit": true,
+        "precision": 0.6,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            3,
+            3
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "top_text_similarity": 0.5072,
+        "images": [
+          {
+            "label": "Figure 1",
+            "score": 0.1215,
+            "pixel": 0.1215
+          },
+          {
+            "label": "Figure 2",
+            "score": 0.1202,
+            "pixel": 0.1202
+          }
+        ],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 1,
+        "latency_s": 0.05
+      },
+      "multimodal_fused_ungated": {
+        "hit": true,
+        "precision": 0.6,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            3,
+            3
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "top_text_similarity": 0.5072,
+        "images": [
+          {
+            "label": "Table 1",
+            "score": 0.1537,
+            "pixel": 0.1112,
+            "caption": 0.1961
+          },
+          {
+            "label": "Figure 2",
+            "score": 0.1294,
+            "pixel": 0.1202,
+            "caption": 0.1386
+          }
+        ],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 1,
+        "latency_s": 0.0531
+      },
+      "multimodal_fused_gated@0.4": {
+        "hit": true,
+        "precision": 0.6,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            3,
+            3
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "top_text_similarity": 0.5072,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.051
+      },
+      "multimodal_fused_gated@0.3": {
+        "hit": true,
+        "precision": 0.6,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            3,
+            3
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "top_text_similarity": 0.5072,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0524
+      },
+      "multimodal_fused_gated@0.35": {
+        "hit": true,
+        "precision": 0.6,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            3,
+            3
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "top_text_similarity": 0.5072,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0503
+      },
+      "multimodal_fused_gated@0.45": {
+        "hit": true,
+        "precision": 0.6,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            3,
+            3
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "top_text_similarity": 0.5072,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0566
+      },
+      "multimodal_fused_gated@0.5": {
+        "hit": true,
+        "precision": 0.6,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            3,
+            3
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "top_text_similarity": 0.5072,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0494
+      }
+    },
+    "q08": {
+      "text_only": {
+        "hit": true,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 0.3333333333333333,
+        "retrieved_pages": [
+          [
+            8,
+            8
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "top_text_similarity": 0.6492,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0447
+      },
+      "multimodal_pixel": {
+        "hit": true,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 0.3333333333333333,
+        "retrieved_pages": [
+          [
+            8,
+            8
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "top_text_similarity": 0.6492,
+        "images": [
+          {
+            "label": "Table 3",
+            "score": 0.2068,
+            "pixel": 0.2068
+          },
+          {
+            "label": "Table 2",
+            "score": 0.1777,
+            "pixel": 0.1777
+          }
+        ],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 1,
+        "latency_s": 0.0497
+      },
+      "multimodal_fused_ungated": {
+        "hit": true,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 0.3333333333333333,
+        "retrieved_pages": [
+          [
+            8,
+            8
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "top_text_similarity": 0.6492,
+        "images": [
+          {
+            "label": "Table 3",
+            "score": 0.3701,
+            "pixel": 0.2068,
+            "caption": 0.5333
+          },
+          {
+            "label": "Table 2",
+            "score": 0.3319,
+            "pixel": 0.1777,
+            "caption": 0.486
+          }
+        ],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 1,
+        "latency_s": 0.0661
+      },
+      "multimodal_fused_gated@0.4": {
+        "hit": true,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 0.3333333333333333,
+        "retrieved_pages": [
+          [
+            8,
+            8
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "top_text_similarity": 0.6492,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0474
+      },
+      "multimodal_fused_gated@0.3": {
+        "hit": true,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 0.3333333333333333,
+        "retrieved_pages": [
+          [
+            8,
+            8
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "top_text_similarity": 0.6492,
+        "images": [
+          {
+            "label": "Table 3",
+            "score": 0.3701,
+            "pixel": 0.2068,
+            "caption": 0.5333
+          },
+          {
+            "label": "Table 2",
+            "score": 0.3319,
+            "pixel": 0.1777,
+            "caption": 0.486
+          }
+        ],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 1,
+        "latency_s": 0.067
+      },
+      "multimodal_fused_gated@0.35": {
+        "hit": true,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 0.3333333333333333,
+        "retrieved_pages": [
+          [
+            8,
+            8
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "top_text_similarity": 0.6492,
+        "images": [
+          {
+            "label": "Table 3",
+            "score": 0.3701,
+            "pixel": 0.2068,
+            "caption": 0.5333
+          }
+        ],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 1,
+        "latency_s": 0.0481
+      },
+      "multimodal_fused_gated@0.45": {
+        "hit": true,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 0.3333333333333333,
+        "retrieved_pages": [
+          [
+            8,
+            8
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "top_text_similarity": 0.6492,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0477
+      },
+      "multimodal_fused_gated@0.5": {
+        "hit": true,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 0.3333333333333333,
+        "retrieved_pages": [
+          [
+            8,
+            8
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "top_text_similarity": 0.6492,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0488
+      }
+    },
+    "q09": {
+      "text_only": {
+        "hit": true,
+        "precision": 0.8,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            7,
+            7
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            7,
+            7
+          ]
+        ],
+        "top_text_similarity": 0.7058,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0463
+      },
+      "multimodal_pixel": {
+        "hit": true,
+        "precision": 0.8,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            7,
+            7
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            7,
+            7
+          ]
+        ],
+        "top_text_similarity": 0.7058,
+        "images": [
+          {
+            "label": "Table 3",
+            "score": 0.1221,
+            "pixel": 0.1221
+          },
+          {
+            "label": "Table 1",
+            "score": 0.11,
+            "pixel": 0.11
+          }
+        ],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 1,
+        "latency_s": 0.049
+      },
+      "multimodal_fused_ungated": {
+        "hit": true,
+        "precision": 0.8,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            7,
+            7
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            7,
+            7
+          ]
+        ],
+        "top_text_similarity": 0.7058,
+        "images": [
+          {
+            "label": "Table 2",
+            "score": 0.2243,
+            "pixel": 0.0661,
+            "caption": 0.3825
+          },
+          {
+            "label": "Table 1",
+            "score": 0.2215,
+            "pixel": 0.11,
+            "caption": 0.3329
+          }
+        ],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 1,
+        "latency_s": 0.0498
+      },
+      "multimodal_fused_gated@0.4": {
+        "hit": true,
+        "precision": 0.8,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            7,
+            7
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            7,
+            7
+          ]
+        ],
+        "top_text_similarity": 0.7058,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0494
+      },
+      "multimodal_fused_gated@0.3": {
+        "hit": true,
+        "precision": 0.8,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            7,
+            7
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            7,
+            7
+          ]
+        ],
+        "top_text_similarity": 0.7058,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0527
+      },
+      "multimodal_fused_gated@0.35": {
+        "hit": true,
+        "precision": 0.8,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            7,
+            7
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            7,
+            7
+          ]
+        ],
+        "top_text_similarity": 0.7058,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0528
+      },
+      "multimodal_fused_gated@0.45": {
+        "hit": true,
+        "precision": 0.8,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            7,
+            7
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            7,
+            7
+          ]
+        ],
+        "top_text_similarity": 0.7058,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0495
+      },
+      "multimodal_fused_gated@0.5": {
+        "hit": true,
+        "precision": 0.8,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            7,
+            7
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            7,
+            7
+          ]
+        ],
+        "top_text_similarity": 0.7058,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0487
+      }
+    },
+    "q10": {
+      "text_only": {
+        "hit": true,
+        "precision": 0.8,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "top_text_similarity": 0.62,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0405
+      },
+      "multimodal_pixel": {
+        "hit": true,
+        "precision": 0.8,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "top_text_similarity": 0.62,
+        "images": [
+          {
+            "label": "Table 3",
+            "score": 0.097,
+            "pixel": 0.097
+          },
+          {
+            "label": "Table 1",
+            "score": 0.0718,
+            "pixel": 0.0718
+          }
+        ],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 1,
+        "latency_s": 0.0436
+      },
+      "multimodal_fused_ungated": {
+        "hit": true,
+        "precision": 0.8,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "top_text_similarity": 0.62,
+        "images": [
+          {
+            "label": "Table 2",
+            "score": 0.1401,
+            "pixel": 0.035,
+            "caption": 0.2452
+          },
+          {
+            "label": "Table 1",
+            "score": 0.1382,
+            "pixel": 0.0718,
+            "caption": 0.2046
+          }
+        ],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 1,
+        "latency_s": 0.0552
+      },
+      "multimodal_fused_gated@0.4": {
+        "hit": true,
+        "precision": 0.8,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "top_text_similarity": 0.62,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0524
+      },
+      "multimodal_fused_gated@0.3": {
+        "hit": true,
+        "precision": 0.8,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "top_text_similarity": 0.62,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0475
+      },
+      "multimodal_fused_gated@0.35": {
+        "hit": true,
+        "precision": 0.8,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "top_text_similarity": 0.62,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0472
+      },
+      "multimodal_fused_gated@0.45": {
+        "hit": true,
+        "precision": 0.8,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "top_text_similarity": 0.62,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0479
+      },
+      "multimodal_fused_gated@0.5": {
+        "hit": true,
+        "precision": 0.8,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "top_text_similarity": 0.62,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0493
+      }
+    },
+    "q11": {
+      "text_only": {
+        "hit": true,
+        "precision": 0.8,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            8,
+            8
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            8,
+            8
+          ]
+        ],
+        "top_text_similarity": 0.8054,
+        "images": [],
+        "visual_hit": false,
+        "visual_in_context": false,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0372
+      },
+      "multimodal_pixel": {
+        "hit": true,
+        "precision": 0.8,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            8,
+            8
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            8,
+            8
+          ]
+        ],
+        "top_text_similarity": 0.8054,
+        "images": [
+          {
+            "label": "Table 2",
+            "score": 0.2398,
+            "pixel": 0.2398
+          },
+          {
+            "label": "Table 3",
+            "score": 0.1204,
+            "pixel": 0.1204
+          }
+        ],
+        "visual_hit": true,
+        "visual_in_context": true,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0439
+      },
+      "multimodal_fused_ungated": {
+        "hit": true,
+        "precision": 0.8,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            8,
+            8
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            8,
+            8
+          ]
+        ],
+        "top_text_similarity": 0.8054,
+        "images": [
+          {
+            "label": "Table 2",
+            "score": 0.4745,
+            "pixel": 0.2398,
+            "caption": 0.7092
+          },
+          {
+            "label": "Table 3",
+            "score": 0.3424,
+            "pixel": 0.1204,
+            "caption": 0.5643
+          }
+        ],
+        "visual_hit": true,
+        "visual_in_context": true,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0413
+      },
+      "multimodal_fused_gated@0.4": {
+        "hit": true,
+        "precision": 0.8,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            8,
+            8
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            8,
+            8
+          ]
+        ],
+        "top_text_similarity": 0.8054,
+        "images": [
+          {
+            "label": "Table 2",
+            "score": 0.4745,
+            "pixel": 0.2398,
+            "caption": 0.7092
+          }
+        ],
+        "visual_hit": true,
+        "visual_in_context": true,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0567
+      },
+      "multimodal_fused_gated@0.3": {
+        "hit": true,
+        "precision": 0.8,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            8,
+            8
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            8,
+            8
+          ]
+        ],
+        "top_text_similarity": 0.8054,
+        "images": [
+          {
+            "label": "Table 2",
+            "score": 0.4745,
+            "pixel": 0.2398,
+            "caption": 0.7092
+          },
+          {
+            "label": "Table 3",
+            "score": 0.3424,
+            "pixel": 0.1204,
+            "caption": 0.5643
+          }
+        ],
+        "visual_hit": true,
+        "visual_in_context": true,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.043
+      },
+      "multimodal_fused_gated@0.35": {
+        "hit": true,
+        "precision": 0.8,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            8,
+            8
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            8,
+            8
+          ]
+        ],
+        "top_text_similarity": 0.8054,
+        "images": [
+          {
+            "label": "Table 2",
+            "score": 0.4745,
+            "pixel": 0.2398,
+            "caption": 0.7092
+          }
+        ],
+        "visual_hit": true,
+        "visual_in_context": true,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0414
+      },
+      "multimodal_fused_gated@0.45": {
+        "hit": true,
+        "precision": 0.8,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            8,
+            8
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            8,
+            8
+          ]
+        ],
+        "top_text_similarity": 0.8054,
+        "images": [
+          {
+            "label": "Table 2",
+            "score": 0.4745,
+            "pixel": 0.2398,
+            "caption": 0.7092
+          }
+        ],
+        "visual_hit": true,
+        "visual_in_context": true,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0484
+      },
+      "multimodal_fused_gated@0.5": {
+        "hit": true,
+        "precision": 0.8,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            8,
+            8
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            8,
+            8
+          ]
+        ],
+        "top_text_similarity": 0.8054,
+        "images": [],
+        "visual_hit": false,
+        "visual_in_context": false,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0414
+      }
+    },
+    "q12": {
+      "text_only": {
+        "hit": true,
+        "precision": 0.6,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            7,
+            7
+          ]
+        ],
+        "top_text_similarity": 0.8308,
+        "images": [],
+        "visual_hit": false,
+        "visual_in_context": false,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0407
+      },
+      "multimodal_pixel": {
+        "hit": true,
+        "precision": 0.6,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            7,
+            7
+          ]
+        ],
+        "top_text_similarity": 0.8308,
+        "images": [
+          {
+            "label": "Table 1",
+            "score": 0.2338,
+            "pixel": 0.2338
+          },
+          {
+            "label": "Figure 2",
+            "score": 0.196,
+            "pixel": 0.196
+          }
+        ],
+        "visual_hit": true,
+        "visual_in_context": true,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0389
+      },
+      "multimodal_fused_ungated": {
+        "hit": true,
+        "precision": 0.6,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            7,
+            7
+          ]
+        ],
+        "top_text_similarity": 0.8308,
+        "images": [
+          {
+            "label": "Table 1",
+            "score": 0.4558,
+            "pixel": 0.2338,
+            "caption": 0.6777
+          },
+          {
+            "label": "Figure 2",
+            "score": 0.3274,
+            "pixel": 0.196,
+            "caption": 0.4587
+          }
+        ],
+        "visual_hit": true,
+        "visual_in_context": true,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0386
+      },
+      "multimodal_fused_gated@0.4": {
+        "hit": true,
+        "precision": 0.6,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            7,
+            7
+          ]
+        ],
+        "top_text_similarity": 0.8308,
+        "images": [
+          {
+            "label": "Table 1",
+            "score": 0.4558,
+            "pixel": 0.2338,
+            "caption": 0.6777
+          }
+        ],
+        "visual_hit": true,
+        "visual_in_context": true,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0402
+      },
+      "multimodal_fused_gated@0.3": {
+        "hit": true,
+        "precision": 0.6,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            7,
+            7
+          ]
+        ],
+        "top_text_similarity": 0.8308,
+        "images": [
+          {
+            "label": "Table 1",
+            "score": 0.4558,
+            "pixel": 0.2338,
+            "caption": 0.6777
+          },
+          {
+            "label": "Figure 2",
+            "score": 0.3274,
+            "pixel": 0.196,
+            "caption": 0.4587
+          }
+        ],
+        "visual_hit": true,
+        "visual_in_context": true,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0467
+      },
+      "multimodal_fused_gated@0.35": {
+        "hit": true,
+        "precision": 0.6,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            7,
+            7
+          ]
+        ],
+        "top_text_similarity": 0.8308,
+        "images": [
+          {
+            "label": "Table 1",
+            "score": 0.4558,
+            "pixel": 0.2338,
+            "caption": 0.6777
+          }
+        ],
+        "visual_hit": true,
+        "visual_in_context": true,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0393
+      },
+      "multimodal_fused_gated@0.45": {
+        "hit": true,
+        "precision": 0.6,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            7,
+            7
+          ]
+        ],
+        "top_text_similarity": 0.8308,
+        "images": [
+          {
+            "label": "Table 1",
+            "score": 0.4558,
+            "pixel": 0.2338,
+            "caption": 0.6777
+          }
+        ],
+        "visual_hit": true,
+        "visual_in_context": true,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0382
+      },
+      "multimodal_fused_gated@0.5": {
+        "hit": true,
+        "precision": 0.6,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            7,
+            7
+          ]
+        ],
+        "top_text_similarity": 0.8308,
+        "images": [],
+        "visual_hit": false,
+        "visual_in_context": false,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0384
+      }
+    },
+    "q13": {
+      "text_only": {
+        "hit": true,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            3,
+            3
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            9,
+            9
+          ]
+        ],
+        "top_text_similarity": 0.7772,
+        "images": [],
+        "visual_hit": false,
+        "visual_in_context": false,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0432
+      },
+      "multimodal_pixel": {
+        "hit": true,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            3,
+            3
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            9,
+            9
+          ]
+        ],
+        "top_text_similarity": 0.7772,
+        "images": [
+          {
+            "label": "Figure 1",
+            "score": 0.1487,
+            "pixel": 0.1487
+          },
+          {
+            "label": "Figure 2",
+            "score": 0.1277,
+            "pixel": 0.1277
+          }
+        ],
+        "visual_hit": true,
+        "visual_in_context": true,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0507
+      },
+      "multimodal_fused_ungated": {
+        "hit": true,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            3,
+            3
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            9,
+            9
+          ]
+        ],
+        "top_text_similarity": 0.7772,
+        "images": [
+          {
+            "label": "Figure 1",
+            "score": 0.463,
+            "pixel": 0.1487,
+            "caption": 0.7772
+          },
+          {
+            "label": "Table 3",
+            "score": 0.3046,
+            "pixel": 0.0866,
+            "caption": 0.5227
+          }
+        ],
+        "visual_hit": true,
+        "visual_in_context": true,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0466
+      },
+      "multimodal_fused_gated@0.4": {
+        "hit": true,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            3,
+            3
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            9,
+            9
+          ]
+        ],
+        "top_text_similarity": 0.7772,
+        "images": [
+          {
+            "label": "Figure 1",
+            "score": 0.463,
+            "pixel": 0.1487,
+            "caption": 0.7772
+          }
+        ],
+        "visual_hit": true,
+        "visual_in_context": true,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0436
+      },
+      "multimodal_fused_gated@0.3": {
+        "hit": true,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            3,
+            3
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            9,
+            9
+          ]
+        ],
+        "top_text_similarity": 0.7772,
+        "images": [
+          {
+            "label": "Figure 1",
+            "score": 0.463,
+            "pixel": 0.1487,
+            "caption": 0.7772
+          },
+          {
+            "label": "Table 3",
+            "score": 0.3046,
+            "pixel": 0.0866,
+            "caption": 0.5227
+          }
+        ],
+        "visual_hit": true,
+        "visual_in_context": true,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0471
+      },
+      "multimodal_fused_gated@0.35": {
+        "hit": true,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            3,
+            3
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            9,
+            9
+          ]
+        ],
+        "top_text_similarity": 0.7772,
+        "images": [
+          {
+            "label": "Figure 1",
+            "score": 0.463,
+            "pixel": 0.1487,
+            "caption": 0.7772
+          }
+        ],
+        "visual_hit": true,
+        "visual_in_context": true,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0494
+      },
+      "multimodal_fused_gated@0.45": {
+        "hit": true,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            3,
+            3
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            9,
+            9
+          ]
+        ],
+        "top_text_similarity": 0.7772,
+        "images": [
+          {
+            "label": "Figure 1",
+            "score": 0.463,
+            "pixel": 0.1487,
+            "caption": 0.7772
+          }
+        ],
+        "visual_hit": true,
+        "visual_in_context": true,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0453
+      },
+      "multimodal_fused_gated@0.5": {
+        "hit": true,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            3,
+            3
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            9,
+            9
+          ]
+        ],
+        "top_text_similarity": 0.7772,
+        "images": [],
+        "visual_hit": false,
+        "visual_in_context": false,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0449
+      }
+    },
+    "q14": {
+      "text_only": {
+        "hit": true,
+        "precision": 1.0,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            4,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        "top_text_similarity": 0.7487,
+        "images": [],
+        "visual_hit": false,
+        "visual_in_context": false,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0375
+      },
+      "multimodal_pixel": {
+        "hit": true,
+        "precision": 1.0,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            4,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        "top_text_similarity": 0.7487,
+        "images": [
+          {
+            "label": "Figure 2",
+            "score": 0.2599,
+            "pixel": 0.2599
+          },
+          {
+            "label": "Table 1",
+            "score": 0.129,
+            "pixel": 0.129
+          }
+        ],
+        "visual_hit": true,
+        "visual_in_context": true,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0391
+      },
+      "multimodal_fused_ungated": {
+        "hit": true,
+        "precision": 1.0,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            4,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        "top_text_similarity": 0.7487,
+        "images": [
+          {
+            "label": "Figure 2",
+            "score": 0.442,
+            "pixel": 0.2599,
+            "caption": 0.6242
+          },
+          {
+            "label": "Table 1",
+            "score": 0.2272,
+            "pixel": 0.129,
+            "caption": 0.3255
+          }
+        ],
+        "visual_hit": true,
+        "visual_in_context": true,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0389
+      },
+      "multimodal_fused_gated@0.4": {
+        "hit": true,
+        "precision": 1.0,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            4,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        "top_text_similarity": 0.7487,
+        "images": [
+          {
+            "label": "Figure 2",
+            "score": 0.442,
+            "pixel": 0.2599,
+            "caption": 0.6242
+          }
+        ],
+        "visual_hit": true,
+        "visual_in_context": true,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0375
+      },
+      "multimodal_fused_gated@0.3": {
+        "hit": true,
+        "precision": 1.0,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            4,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        "top_text_similarity": 0.7487,
+        "images": [
+          {
+            "label": "Figure 2",
+            "score": 0.442,
+            "pixel": 0.2599,
+            "caption": 0.6242
+          }
+        ],
+        "visual_hit": true,
+        "visual_in_context": true,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0411
+      },
+      "multimodal_fused_gated@0.35": {
+        "hit": true,
+        "precision": 1.0,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            4,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        "top_text_similarity": 0.7487,
+        "images": [
+          {
+            "label": "Figure 2",
+            "score": 0.442,
+            "pixel": 0.2599,
+            "caption": 0.6242
+          }
+        ],
+        "visual_hit": true,
+        "visual_in_context": true,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0389
+      },
+      "multimodal_fused_gated@0.45": {
+        "hit": true,
+        "precision": 1.0,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            4,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        "top_text_similarity": 0.7487,
+        "images": [],
+        "visual_hit": false,
+        "visual_in_context": false,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0383
+      },
+      "multimodal_fused_gated@0.5": {
+        "hit": true,
+        "precision": 1.0,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            4,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        "top_text_similarity": 0.7487,
+        "images": [],
+        "visual_hit": false,
+        "visual_in_context": false,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0396
+      }
+    },
+    "q15": {
+      "text_only": {
+        "hit": true,
+        "precision": 0.4,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            8,
+            8
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        "top_text_similarity": 0.6132,
+        "images": [],
+        "visual_hit": false,
+        "visual_in_context": false,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0472
+      },
+      "multimodal_pixel": {
+        "hit": true,
+        "precision": 0.4,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            8,
+            8
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        "top_text_similarity": 0.6132,
+        "images": [
+          {
+            "label": "Figure 2",
+            "score": 0.1939,
+            "pixel": 0.1939
+          },
+          {
+            "label": "Table 3",
+            "score": 0.1372,
+            "pixel": 0.1372
+          }
+        ],
+        "visual_hit": true,
+        "visual_in_context": false,
+        "irrelevant_images_in_context": 1,
+        "latency_s": 0.0508
+      },
+      "multimodal_fused_ungated": {
+        "hit": true,
+        "precision": 0.4,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            8,
+            8
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        "top_text_similarity": 0.6132,
+        "images": [
+          {
+            "label": "Figure 2",
+            "score": 0.3378,
+            "pixel": 0.1939,
+            "caption": 0.4817
+          },
+          {
+            "label": "Table 3",
+            "score": 0.2625,
+            "pixel": 0.1372,
+            "caption": 0.3878
+          }
+        ],
+        "visual_hit": true,
+        "visual_in_context": false,
+        "irrelevant_images_in_context": 1,
+        "latency_s": 0.0551
+      },
+      "multimodal_fused_gated@0.4": {
+        "hit": true,
+        "precision": 0.4,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            8,
+            8
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        "top_text_similarity": 0.6132,
+        "images": [],
+        "visual_hit": false,
+        "visual_in_context": false,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0498
+      },
+      "multimodal_fused_gated@0.3": {
+        "hit": true,
+        "precision": 0.4,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            8,
+            8
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        "top_text_similarity": 0.6132,
+        "images": [
+          {
+            "label": "Figure 2",
+            "score": 0.3378,
+            "pixel": 0.1939,
+            "caption": 0.4817
+          }
+        ],
+        "visual_hit": false,
+        "visual_in_context": false,
+        "irrelevant_images_in_context": 1,
+        "latency_s": 0.0606
+      },
+      "multimodal_fused_gated@0.35": {
+        "hit": true,
+        "precision": 0.4,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            8,
+            8
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        "top_text_similarity": 0.6132,
+        "images": [],
+        "visual_hit": false,
+        "visual_in_context": false,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0484
+      },
+      "multimodal_fused_gated@0.45": {
+        "hit": true,
+        "precision": 0.4,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            8,
+            8
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        "top_text_similarity": 0.6132,
+        "images": [],
+        "visual_hit": false,
+        "visual_in_context": false,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0524
+      },
+      "multimodal_fused_gated@0.5": {
+        "hit": true,
+        "precision": 0.4,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            8,
+            8
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        "top_text_similarity": 0.6132,
+        "images": [],
+        "visual_hit": false,
+        "visual_in_context": false,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0479
+      }
+    },
+    "q16": {
+      "text_only": {
+        "hit": true,
+        "precision": 0.4,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            7,
+            7
+          ]
+        ],
+        "top_text_similarity": 0.7236,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0338
+      },
+      "multimodal_pixel": {
+        "hit": true,
+        "precision": 0.4,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            7,
+            7
+          ]
+        ],
+        "top_text_similarity": 0.7236,
+        "images": [
+          {
+            "label": "Figure 2",
+            "score": 0.093,
+            "pixel": 0.093
+          },
+          {
+            "label": "Table 3",
+            "score": 0.0609,
+            "pixel": 0.0609
+          }
+        ],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 1,
+        "latency_s": 0.0433
+      },
+      "multimodal_fused_ungated": {
+        "hit": true,
+        "precision": 0.4,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            7,
+            7
+          ]
+        ],
+        "top_text_similarity": 0.7236,
+        "images": [
+          {
+            "label": "Table 2",
+            "score": 0.1866,
+            "pixel": 0.0457,
+            "caption": 0.3276
+          },
+          {
+            "label": "Figure 1",
+            "score": 0.1717,
+            "pixel": 0.0542,
+            "caption": 0.2891
+          }
+        ],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 1,
+        "latency_s": 0.0465
+      },
+      "multimodal_fused_gated@0.4": {
+        "hit": true,
+        "precision": 0.4,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            7,
+            7
+          ]
+        ],
+        "top_text_similarity": 0.7236,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0381
+      },
+      "multimodal_fused_gated@0.3": {
+        "hit": true,
+        "precision": 0.4,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            7,
+            7
+          ]
+        ],
+        "top_text_similarity": 0.7236,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0409
+      },
+      "multimodal_fused_gated@0.35": {
+        "hit": true,
+        "precision": 0.4,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            7,
+            7
+          ]
+        ],
+        "top_text_similarity": 0.7236,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0386
+      },
+      "multimodal_fused_gated@0.45": {
+        "hit": true,
+        "precision": 0.4,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            7,
+            7
+          ]
+        ],
+        "top_text_similarity": 0.7236,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.054
+      },
+      "multimodal_fused_gated@0.5": {
+        "hit": true,
+        "precision": 0.4,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            7,
+            7
+          ]
+        ],
+        "top_text_similarity": 0.7236,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0382
+      }
+    },
+    "q17": {
+      "text_only": {
+        "hit": true,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            5,
+            5
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        "top_text_similarity": 0.6938,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0336
+      },
+      "multimodal_pixel": {
+        "hit": true,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            5,
+            5
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        "top_text_similarity": 0.6938,
+        "images": [
+          {
+            "label": "Figure 1",
+            "score": 0.1384,
+            "pixel": 0.1384
+          },
+          {
+            "label": "Figure 2",
+            "score": 0.1361,
+            "pixel": 0.1361
+          }
+        ],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 1,
+        "latency_s": 0.0377
+      },
+      "multimodal_fused_ungated": {
+        "hit": true,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            5,
+            5
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        "top_text_similarity": 0.6938,
+        "images": [
+          {
+            "label": "Table 1",
+            "score": 0.2154,
+            "pixel": 0.1063,
+            "caption": 0.3246
+          },
+          {
+            "label": "Figure 2",
+            "score": 0.2031,
+            "pixel": 0.1361,
+            "caption": 0.2701
+          }
+        ],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 1,
+        "latency_s": 0.0426
+      },
+      "multimodal_fused_gated@0.4": {
+        "hit": true,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            5,
+            5
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        "top_text_similarity": 0.6938,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0371
+      },
+      "multimodal_fused_gated@0.3": {
+        "hit": true,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            5,
+            5
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        "top_text_similarity": 0.6938,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0604
+      },
+      "multimodal_fused_gated@0.35": {
+        "hit": true,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            5,
+            5
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        "top_text_similarity": 0.6938,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0375
+      },
+      "multimodal_fused_gated@0.45": {
+        "hit": true,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            5,
+            5
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        "top_text_similarity": 0.6938,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0596
+      },
+      "multimodal_fused_gated@0.5": {
+        "hit": true,
+        "precision": 0.2,
+        "recall": 1.0,
+        "mrr": 1.0,
+        "retrieved_pages": [
+          [
+            5,
+            5
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        "top_text_similarity": 0.6938,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0372
+      }
+    },
+    "q18": {
+      "text_only": {
+        "hit": false,
+        "precision": 0.0,
+        "recall": null,
+        "mrr": 0.0,
+        "retrieved_pages": [
+          [
+            8,
+            8
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            8,
+            8
+          ]
+        ],
+        "top_text_similarity": 0.347,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0401
+      },
+      "multimodal_pixel": {
+        "hit": false,
+        "precision": 0.0,
+        "recall": null,
+        "mrr": 0.0,
+        "retrieved_pages": [
+          [
+            8,
+            8
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            8,
+            8
+          ]
+        ],
+        "top_text_similarity": 0.347,
+        "images": [
+          {
+            "label": "Table 3",
+            "score": 0.1338,
+            "pixel": 0.1338
+          },
+          {
+            "label": "Figure 2",
+            "score": 0.0875,
+            "pixel": 0.0875
+          }
+        ],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 1,
+        "latency_s": 0.0727
+      },
+      "multimodal_fused_ungated": {
+        "hit": false,
+        "precision": 0.0,
+        "recall": null,
+        "mrr": 0.0,
+        "retrieved_pages": [
+          [
+            8,
+            8
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            8,
+            8
+          ]
+        ],
+        "top_text_similarity": 0.347,
+        "images": [
+          {
+            "label": "Table 3",
+            "score": 0.236,
+            "pixel": 0.1338,
+            "caption": 0.3382
+          },
+          {
+            "label": "Table 1",
+            "score": 0.1699,
+            "pixel": 0.0726,
+            "caption": 0.2672
+          }
+        ],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 1,
+        "latency_s": 0.0447
+      },
+      "multimodal_fused_gated@0.4": {
+        "hit": false,
+        "precision": 0.0,
+        "recall": null,
+        "mrr": 0.0,
+        "retrieved_pages": [
+          [
+            8,
+            8
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            8,
+            8
+          ]
+        ],
+        "top_text_similarity": 0.347,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0451
+      },
+      "multimodal_fused_gated@0.3": {
+        "hit": false,
+        "precision": 0.0,
+        "recall": null,
+        "mrr": 0.0,
+        "retrieved_pages": [
+          [
+            8,
+            8
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            8,
+            8
+          ]
+        ],
+        "top_text_similarity": 0.347,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0634
+      },
+      "multimodal_fused_gated@0.35": {
+        "hit": false,
+        "precision": 0.0,
+        "recall": null,
+        "mrr": 0.0,
+        "retrieved_pages": [
+          [
+            8,
+            8
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            8,
+            8
+          ]
+        ],
+        "top_text_similarity": 0.347,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.045
+      },
+      "multimodal_fused_gated@0.45": {
+        "hit": false,
+        "precision": 0.0,
+        "recall": null,
+        "mrr": 0.0,
+        "retrieved_pages": [
+          [
+            8,
+            8
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            8,
+            8
+          ]
+        ],
+        "top_text_similarity": 0.347,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.053
+      },
+      "multimodal_fused_gated@0.5": {
+        "hit": false,
+        "precision": 0.0,
+        "recall": null,
+        "mrr": 0.0,
+        "retrieved_pages": [
+          [
+            8,
+            8
+          ],
+          [
+            9,
+            9
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            8,
+            8
+          ]
+        ],
+        "top_text_similarity": 0.347,
+        "images": [],
+        "visual_in_context": null,
+        "irrelevant_images_in_context": 0,
+        "latency_s": 0.0447
+      }
+    }
+  },
+  "evaluated_at": "2026-10-30T18:26:37+00:00"
+}

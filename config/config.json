@@ -1,0 +1,75 @@
+{
+  "document": {
+    "source_url": "https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf",
+    "local_path": "data/raw/attention_is_all_you_need.pdf",
+    "download_timeout_s": 60,
+    "download_max_retries": 3,
+    "max_download_bytes": 52428800
+  },
+  "chunking": {
+    "chunk_size_chars": 900,
+    "chunk_overlap_chars": 150,
+    "min_chunk_chars": 80,
+    "exclude_references": true,
+    "parser": "layout"
+  },
+  "images": {
+    "render_dpi": 200,
+    "min_image_side_px": 64,
+    "max_image_side_px": 2048,
+    "extract_tables": true,
+    "output_dir": "data/processed/visuals"
+  },
+  "embedding": {
+    "model_id": "jinaai/jina-clip-v1",
+    "revision": "ceb3e44ca4d6eceaa4f3fb58b1c1a5748b3f29b6",
+    "batch_size": 16,
+    "max_text_tokens": 512,
+    "device": "auto"
+  },
+  "vector_store": {
+    "persist_dir": "storage/chroma",
+    "collection_name": "attention_paper_mm",
+    "registry_path": "storage/registry.json",
+    "inbox_dir": "data/inbox"
+  },
+  "retrieval": {
+    "mode": "multimodal",
+    "top_k_text": 5,
+    "top_k_image": 2,
+    "visual_scoring": "fused",
+    "min_visual_score": 0.4,
+    "structure_routing": false,
+    "top_k_sections": 2,
+    "routed_text_slots": 3
+  },
+  "context": {
+    "max_context_chars": 3600,
+    "max_images": 1
+  },
+  "generation": {
+    "model_id": "microsoft/Phi-3-vision-128k-instruct",
+    "revision": "ed2772fabe9dc9acd0caad54b62761d92520cc44",
+    "device": "auto",
+    "dtype": "bfloat16",
+    "num_crops": 4,
+    "max_new_tokens": 200,
+    "max_input_tokens": 4096,
+    "do_sample": false,
+    "temperature": 0.0,
+    "repetition_penalty": 1.0,
+    "attn_implementation": "eager"
+  },
+  "monitoring": {
+    "telemetry_path": "storage/telemetry.db",
+    "record_queries": true,
+    "mlflow_tracking_uri": "sqlite:///storage/mlflow.db",
+    "mlflow_experiment": "multimodal-rag"
+  },
+  "logging": {
+    "level": "INFO",
+    "log_file": "logs/rag.log",
+    "max_bytes": 5242880,
+    "backup_count": 3
+  }
+}

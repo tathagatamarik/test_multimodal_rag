@@ -1,0 +1,5 @@
+{
+  "prompt_version": "v1-rules-last-concrete-example",
+  "parser": "basic",
+  "description": "Baseline: rules after evidence, concrete citation example; figure AND table caption chunks dropped when the image is attached."
+}

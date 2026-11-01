@@ -1,0 +1,5 @@
+{
+  "prompt_version": "v2-abstract-example-strict-abstain",
+  "parser": "basic",
+  "description": "Table chunks kept with table images; abstract citation example '<claim> [T2, p.5]'; label-style citation parsing."
+}

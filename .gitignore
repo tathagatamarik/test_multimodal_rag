@@ -1,3 +1,31 @@
+# Environments / caches
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Downloaded and generated data (re-created by `python -m src.cli index`)
+data/raw/*.pdf
+data/raw/*.part
+data/raw/*.invalid
+data/processed/
+storage/
+logs/
+
+# Model weights live in the Hugging Face cache (~/.cache/huggingface), never in the repo
+*.safetensors
+*.bin
+*.onnx
+data/uploads/
+data/inbox/
+# MLflow artifact files (run metadata lives in storage/mlflow.db)
+mlruns/
+
+# Personal study material (kept local)
+deliverables/study_guide.pdf
+deliverables/source/study_guide.html
+
+# ---- GitHub Python template ----
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
@@ -218,3 +246,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Keep the raw evaluation logs (evidence for the reported results)
+!artifacts/evaluation/*/evaluate_stdout.log

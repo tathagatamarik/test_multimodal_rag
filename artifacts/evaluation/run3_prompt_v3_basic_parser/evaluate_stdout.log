@@ -1,0 +1,512 @@
+2026-10-31 15:12:19,467 | INFO     | src.embedding_service | run=77bcb29a | Loaded jinaai/jina-clip-v1 on cpu in 1.4s (revision ceb3e44ca4d6eceaa4f3fb58b1c1a5748b3f29b6)
+2026-10-31 15:12:19,527 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=text, visual=fused, 0 below threshold) in 1.443s
+2026-10-31 15:12:19,527 | INFO     | src.context_builder | run=77bcb29a | Context: 5 text items, 0 images, 0 dropped, 3392 chars
+2026-10-31 15:12:19,571 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=text, visual=fused, 0 below threshold) in 0.043s
+2026-10-31 15:12:19,571 | INFO     | src.context_builder | run=77bcb29a | Context: 4 text items, 0 images, 1 dropped, 2673 chars
+2026-10-31 15:12:19,606 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=text, visual=fused, 0 below threshold) in 0.035s
+2026-10-31 15:12:19,607 | INFO     | src.context_builder | run=77bcb29a | Context: 3 text items, 0 images, 0 dropped, 1846 chars
+2026-10-31 15:12:19,639 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=text, visual=fused, 0 below threshold) in 0.032s
+2026-10-31 15:12:19,640 | INFO     | src.context_builder | run=77bcb29a | Context: 4 text items, 0 images, 0 dropped, 2979 chars
+2026-10-31 15:12:19,672 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=text, visual=fused, 0 below threshold) in 0.032s
+2026-10-31 15:12:19,672 | INFO     | src.context_builder | run=77bcb29a | Context: 5 text items, 0 images, 0 dropped, 2952 chars
+2026-10-31 15:12:19,711 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=text, visual=fused, 0 below threshold) in 0.038s
+2026-10-31 15:12:19,711 | INFO     | src.context_builder | run=77bcb29a | Context: 4 text items, 0 images, 0 dropped, 2970 chars
+2026-10-31 15:12:19,755 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=text, visual=fused, 0 below threshold) in 0.044s
+2026-10-31 15:12:19,755 | INFO     | src.context_builder | run=77bcb29a | Context: 5 text items, 0 images, 0 dropped, 3146 chars
+2026-10-31 15:12:19,800 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=text, visual=fused, 0 below threshold) in 0.045s
+2026-10-31 15:12:19,801 | INFO     | src.context_builder | run=77bcb29a | Context: 4 text items, 0 images, 0 dropped, 3329 chars
+2026-10-31 15:12:19,845 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=text, visual=fused, 0 below threshold) in 0.044s
+2026-10-31 15:12:19,846 | INFO     | src.context_builder | run=77bcb29a | Context: 5 text items, 0 images, 0 dropped, 2292 chars
+2026-10-31 15:12:19,886 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=text, visual=fused, 0 below threshold) in 0.040s
+2026-10-31 15:12:19,886 | INFO     | src.context_builder | run=77bcb29a | Context: 5 text items, 0 images, 0 dropped, 1463 chars
+2026-10-31 15:12:19,923 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=text, visual=fused, 0 below threshold) in 0.036s
+2026-10-31 15:12:19,923 | INFO     | src.context_builder | run=77bcb29a | Context: 4 text items, 0 images, 1 dropped, 2874 chars
+2026-10-31 15:12:19,958 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=text, visual=fused, 0 below threshold) in 0.035s
+2026-10-31 15:12:19,959 | INFO     | src.context_builder | run=77bcb29a | Context: 3 text items, 0 images, 1 dropped, 3015 chars
+2026-10-31 15:12:20,006 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=text, visual=fused, 0 below threshold) in 0.047s
+2026-10-31 15:12:20,006 | INFO     | src.context_builder | run=77bcb29a | Context: 5 text items, 0 images, 0 dropped, 2743 chars
+2026-10-31 15:12:20,045 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=text, visual=fused, 0 below threshold) in 0.038s
+2026-10-31 15:12:20,045 | INFO     | src.context_builder | run=77bcb29a | Context: 3 text items, 0 images, 0 dropped, 1846 chars
+2026-10-31 15:12:20,090 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=text, visual=fused, 0 below threshold) in 0.045s
+2026-10-31 15:12:20,091 | INFO     | src.context_builder | run=77bcb29a | Context: 3 text items, 0 images, 1 dropped, 3129 chars
+2026-10-31 15:12:20,129 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=text, visual=fused, 0 below threshold) in 0.038s
+2026-10-31 15:12:20,129 | INFO     | src.context_builder | run=77bcb29a | Context: 4 text items, 0 images, 0 dropped, 2453 chars
+2026-10-31 15:12:20,162 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=text, visual=fused, 0 below threshold) in 0.033s
+2026-10-31 15:12:20,162 | INFO     | src.context_builder | run=77bcb29a | Context: 3 text items, 0 images, 0 dropped, 3462 chars
+2026-10-31 15:12:20,204 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=text, visual=fused, 0 below threshold) in 0.041s
+2026-10-31 15:12:20,204 | INFO     | src.context_builder | run=77bcb29a | Context: 3 text items, 0 images, 1 dropped, 3073 chars
+2026-10-31 15:12:20,238 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 2 image records (mode=multimodal, visual=pixel, 0 below threshold) in 0.033s
+2026-10-31 15:12:20,246 | INFO     | src.context_builder | run=77bcb29a | Context: 4 text items, 1 images, 2 dropped, 2979 chars
+2026-10-31 15:12:20,284 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 2 image records (mode=multimodal, visual=pixel, 0 below threshold) in 0.037s
+2026-10-31 15:12:20,289 | INFO     | src.context_builder | run=77bcb29a | Context: 4 text items, 1 images, 2 dropped, 2806 chars
+2026-10-31 15:12:20,324 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 2 image records (mode=multimodal, visual=pixel, 0 below threshold) in 0.035s
+2026-10-31 15:12:20,330 | INFO     | src.context_builder | run=77bcb29a | Context: 2 text items, 1 images, 2 dropped, 1753 chars
+2026-10-31 15:12:20,365 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 2 image records (mode=multimodal, visual=pixel, 0 below threshold) in 0.034s
+2026-10-31 15:12:20,370 | INFO     | src.context_builder | run=77bcb29a | Context: 3 text items, 1 images, 2 dropped, 2886 chars
+2026-10-31 15:12:20,406 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 2 image records (mode=multimodal, visual=pixel, 0 below threshold) in 0.035s
+2026-10-31 15:12:20,409 | INFO     | src.context_builder | run=77bcb29a | Context: 5 text items, 1 images, 1 dropped, 3237 chars
+2026-10-31 15:12:20,447 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 2 image records (mode=multimodal, visual=pixel, 0 below threshold) in 0.038s
+2026-10-31 15:12:20,450 | INFO     | src.context_builder | run=77bcb29a | Context: 4 text items, 1 images, 1 dropped, 3255 chars
+2026-10-31 15:12:20,503 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 2 image records (mode=multimodal, visual=pixel, 0 below threshold) in 0.053s
+2026-10-31 15:12:20,510 | INFO     | src.context_builder | run=77bcb29a | Context: 5 text items, 1 images, 1 dropped, 3193 chars
+2026-10-31 15:12:20,564 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 2 image records (mode=multimodal, visual=pixel, 0 below threshold) in 0.053s
+2026-10-31 15:12:20,570 | INFO     | src.context_builder | run=77bcb29a | Context: 3 text items, 1 images, 2 dropped, 3391 chars
+2026-10-31 15:12:20,617 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 2 image records (mode=multimodal, visual=pixel, 0 below threshold) in 0.046s
+2026-10-31 15:12:20,623 | INFO     | src.context_builder | run=77bcb29a | Context: 5 text items, 1 images, 1 dropped, 2615 chars
+2026-10-31 15:12:20,665 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 2 image records (mode=multimodal, visual=pixel, 0 below threshold) in 0.042s
+2026-10-31 15:12:20,672 | INFO     | src.context_builder | run=77bcb29a | Context: 5 text items, 1 images, 1 dropped, 1786 chars
+2026-10-31 15:12:20,710 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 2 image records (mode=multimodal, visual=pixel, 0 below threshold) in 0.038s
+2026-10-31 15:12:20,715 | INFO     | src.context_builder | run=77bcb29a | Context: 4 text items, 1 images, 2 dropped, 3066 chars
+2026-10-31 15:12:20,752 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 2 image records (mode=multimodal, visual=pixel, 0 below threshold) in 0.036s
+2026-10-31 15:12:20,754 | INFO     | src.context_builder | run=77bcb29a | Context: 3 text items, 1 images, 2 dropped, 3300 chars
+2026-10-31 15:12:20,796 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 2 image records (mode=multimodal, visual=pixel, 0 below threshold) in 0.041s
+2026-10-31 15:12:20,801 | INFO     | src.context_builder | run=77bcb29a | Context: 4 text items, 1 images, 2 dropped, 2693 chars
+2026-10-31 15:12:20,837 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 2 image records (mode=multimodal, visual=pixel, 0 below threshold) in 0.036s
+2026-10-31 15:12:20,843 | INFO     | src.context_builder | run=77bcb29a | Context: 2 text items, 1 images, 2 dropped, 1753 chars
+2026-10-31 15:12:20,889 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 2 image records (mode=multimodal, visual=pixel, 0 below threshold) in 0.046s
+2026-10-31 15:12:20,894 | INFO     | src.context_builder | run=77bcb29a | Context: 3 text items, 1 images, 2 dropped, 3262 chars
+2026-10-31 15:12:20,929 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 2 image records (mode=multimodal, visual=pixel, 0 below threshold) in 0.034s
+2026-10-31 15:12:20,935 | INFO     | src.context_builder | run=77bcb29a | Context: 4 text items, 1 images, 1 dropped, 2586 chars
+2026-10-31 15:12:20,971 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 2 image records (mode=multimodal, visual=pixel, 0 below threshold) in 0.035s
+2026-10-31 15:12:20,976 | INFO     | src.context_builder | run=77bcb29a | Context: 3 text items, 1 images, 1 dropped, 3509 chars
+2026-10-31 15:12:21,024 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 2 image records (mode=multimodal, visual=pixel, 0 below threshold) in 0.048s
+2026-10-31 15:12:21,031 | INFO     | src.context_builder | run=77bcb29a | Context: 3 text items, 1 images, 2 dropped, 3396 chars
+2026-10-31 15:12:21,067 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 2 image records (mode=multimodal, visual=fused, 0 below threshold) in 0.035s
+2026-10-31 15:12:21,073 | INFO     | src.context_builder | run=77bcb29a | Context: 4 text items, 1 images, 2 dropped, 2979 chars
+2026-10-31 15:12:21,112 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 2 image records (mode=multimodal, visual=fused, 0 below threshold) in 0.039s
+2026-10-31 15:12:21,117 | INFO     | src.context_builder | run=77bcb29a | Context: 4 text items, 1 images, 2 dropped, 2806 chars
+2026-10-31 15:12:21,159 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 2 image records (mode=multimodal, visual=fused, 0 below threshold) in 0.041s
+2026-10-31 15:12:21,164 | INFO     | src.context_builder | run=77bcb29a | Context: 2 text items, 1 images, 2 dropped, 1753 chars
+2026-10-31 15:12:21,201 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 2 image records (mode=multimodal, visual=fused, 0 below threshold) in 0.036s
+2026-10-31 15:12:21,206 | INFO     | src.context_builder | run=77bcb29a | Context: 3 text items, 1 images, 2 dropped, 2886 chars
+2026-10-31 15:12:21,243 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 2 image records (mode=multimodal, visual=fused, 0 below threshold) in 0.036s
+2026-10-31 15:12:21,249 | INFO     | src.context_builder | run=77bcb29a | Context: 5 text items, 1 images, 1 dropped, 3275 chars
+2026-10-31 15:12:21,309 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 2 image records (mode=multimodal, visual=fused, 0 below threshold) in 0.060s
+2026-10-31 15:12:21,313 | INFO     | src.context_builder | run=77bcb29a | Context: 4 text items, 1 images, 1 dropped, 3255 chars
+2026-10-31 15:12:21,377 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 2 image records (mode=multimodal, visual=fused, 0 below threshold) in 0.064s
+2026-10-31 15:12:21,380 | INFO     | src.context_builder | run=77bcb29a | Context: 5 text items, 1 images, 1 dropped, 3431 chars
+2026-10-31 15:12:21,429 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 2 image records (mode=multimodal, visual=fused, 0 below threshold) in 0.048s
+2026-10-31 15:12:21,435 | INFO     | src.context_builder | run=77bcb29a | Context: 3 text items, 1 images, 2 dropped, 3391 chars
+2026-10-31 15:12:21,488 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 2 image records (mode=multimodal, visual=fused, 0 below threshold) in 0.053s
+2026-10-31 15:12:21,493 | INFO     | src.context_builder | run=77bcb29a | Context: 5 text items, 1 images, 1 dropped, 2484 chars
+2026-10-31 15:12:21,554 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 2 image records (mode=multimodal, visual=fused, 0 below threshold) in 0.060s
+2026-10-31 15:12:21,560 | INFO     | src.context_builder | run=77bcb29a | Context: 5 text items, 1 images, 1 dropped, 1655 chars
+2026-10-31 15:12:21,607 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 2 image records (mode=multimodal, visual=fused, 0 below threshold) in 0.047s
+2026-10-31 15:12:21,611 | INFO     | src.context_builder | run=77bcb29a | Context: 4 text items, 1 images, 2 dropped, 3066 chars
+2026-10-31 15:12:21,649 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 2 image records (mode=multimodal, visual=fused, 0 below threshold) in 0.038s
+2026-10-31 15:12:21,652 | INFO     | src.context_builder | run=77bcb29a | Context: 3 text items, 1 images, 2 dropped, 3300 chars
+2026-10-31 15:12:21,697 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 2 image records (mode=multimodal, visual=fused, 0 below threshold) in 0.045s
+2026-10-31 15:12:21,702 | INFO     | src.context_builder | run=77bcb29a | Context: 4 text items, 1 images, 2 dropped, 2693 chars
+2026-10-31 15:12:21,740 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 2 image records (mode=multimodal, visual=fused, 0 below threshold) in 0.038s
+2026-10-31 15:12:21,746 | INFO     | src.context_builder | run=77bcb29a | Context: 2 text items, 1 images, 2 dropped, 1753 chars
+2026-10-31 15:12:21,794 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 2 image records (mode=multimodal, visual=fused, 0 below threshold) in 0.048s
+2026-10-31 15:12:21,800 | INFO     | src.context_builder | run=77bcb29a | Context: 3 text items, 1 images, 2 dropped, 3262 chars
+2026-10-31 15:12:21,838 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 2 image records (mode=multimodal, visual=fused, 0 below threshold) in 0.037s
+2026-10-31 15:12:21,842 | INFO     | src.context_builder | run=77bcb29a | Context: 4 text items, 1 images, 1 dropped, 2645 chars
+2026-10-31 15:12:21,879 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 2 image records (mode=multimodal, visual=fused, 0 below threshold) in 0.036s
+2026-10-31 15:12:21,881 | INFO     | src.context_builder | run=77bcb29a | Context: 2 text items, 1 images, 3 dropped, 2099 chars
+2026-10-31 15:12:21,926 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 2 image records (mode=multimodal, visual=fused, 0 below threshold) in 0.044s
+2026-10-31 15:12:21,935 | INFO     | src.context_builder | run=77bcb29a | Context: 3 text items, 1 images, 2 dropped, 3396 chars
+2026-10-31 15:12:22,001 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 3 below threshold) in 0.060s
+2026-10-31 15:12:22,001 | INFO     | src.context_builder | run=77bcb29a | Context: 5 text items, 0 images, 0 dropped, 3392 chars
+2026-10-31 15:12:22,051 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 3 below threshold) in 0.050s
+2026-10-31 15:12:22,052 | INFO     | src.context_builder | run=77bcb29a | Context: 4 text items, 0 images, 1 dropped, 2673 chars
+2026-10-31 15:12:22,097 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 1 image records (mode=multimodal, visual=fused, 2 below threshold) in 0.045s
+2026-10-31 15:12:22,103 | INFO     | src.context_builder | run=77bcb29a | Context: 2 text items, 1 images, 1 dropped, 1753 chars
+2026-10-31 15:12:22,140 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 1 image records (mode=multimodal, visual=fused, 2 below threshold) in 0.036s
+2026-10-31 15:12:22,145 | INFO     | src.context_builder | run=77bcb29a | Context: 3 text items, 1 images, 1 dropped, 2886 chars
+2026-10-31 15:12:22,184 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 4 below threshold) in 0.038s
+2026-10-31 15:12:22,184 | INFO     | src.context_builder | run=77bcb29a | Context: 5 text items, 0 images, 0 dropped, 2952 chars
+2026-10-31 15:12:22,224 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 3 below threshold) in 0.040s
+2026-10-31 15:12:22,224 | INFO     | src.context_builder | run=77bcb29a | Context: 4 text items, 0 images, 0 dropped, 2970 chars
+2026-10-31 15:12:22,273 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 4 below threshold) in 0.049s
+2026-10-31 15:12:22,274 | INFO     | src.context_builder | run=77bcb29a | Context: 5 text items, 0 images, 0 dropped, 3146 chars
+2026-10-31 15:12:22,321 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 2 below threshold) in 0.048s
+2026-10-31 15:12:22,322 | INFO     | src.context_builder | run=77bcb29a | Context: 4 text items, 0 images, 0 dropped, 3329 chars
+2026-10-31 15:12:22,371 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 3 below threshold) in 0.048s
+2026-10-31 15:12:22,371 | INFO     | src.context_builder | run=77bcb29a | Context: 5 text items, 0 images, 0 dropped, 2292 chars
+2026-10-31 15:12:22,415 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 3 below threshold) in 0.044s
+2026-10-31 15:12:22,416 | INFO     | src.context_builder | run=77bcb29a | Context: 5 text items, 0 images, 0 dropped, 1463 chars
+2026-10-31 15:12:22,455 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 1 image records (mode=multimodal, visual=fused, 1 below threshold) in 0.039s
+2026-10-31 15:12:22,459 | INFO     | src.context_builder | run=77bcb29a | Context: 4 text items, 1 images, 1 dropped, 3066 chars
+2026-10-31 15:12:22,503 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 1 image records (mode=multimodal, visual=fused, 1 below threshold) in 0.043s
+2026-10-31 15:12:22,506 | INFO     | src.context_builder | run=77bcb29a | Context: 3 text items, 1 images, 1 dropped, 3300 chars
+2026-10-31 15:12:22,556 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 1 image records (mode=multimodal, visual=fused, 2 below threshold) in 0.050s
+2026-10-31 15:12:22,561 | INFO     | src.context_builder | run=77bcb29a | Context: 4 text items, 1 images, 1 dropped, 2693 chars
+2026-10-31 15:12:22,599 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 1 image records (mode=multimodal, visual=fused, 1 below threshold) in 0.038s
+2026-10-31 15:12:22,605 | INFO     | src.context_builder | run=77bcb29a | Context: 2 text items, 1 images, 1 dropped, 1753 chars
+2026-10-31 15:12:22,653 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 2 below threshold) in 0.048s
+2026-10-31 15:12:22,653 | INFO     | src.context_builder | run=77bcb29a | Context: 3 text items, 0 images, 1 dropped, 3129 chars
+2026-10-31 15:12:22,691 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 4 below threshold) in 0.037s
+2026-10-31 15:12:22,691 | INFO     | src.context_builder | run=77bcb29a | Context: 4 text items, 0 images, 0 dropped, 2453 chars
+2026-10-31 15:12:22,728 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 3 below threshold) in 0.036s
+2026-10-31 15:12:22,728 | INFO     | src.context_builder | run=77bcb29a | Context: 3 text items, 0 images, 0 dropped, 3462 chars
+2026-10-31 15:12:22,772 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 3 below threshold) in 0.044s
+2026-10-31 15:12:22,773 | INFO     | src.context_builder | run=77bcb29a | Context: 3 text items, 0 images, 1 dropped, 3073 chars
+2026-10-31 15:12:22,808 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 1 image records (mode=multimodal, visual=fused, 2 below threshold) in 0.035s
+2026-10-31 15:12:22,815 | INFO     | src.context_builder | run=77bcb29a | Context: 4 text items, 1 images, 1 dropped, 2979 chars
+2026-10-31 15:12:22,854 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 1 image records (mode=multimodal, visual=fused, 2 below threshold) in 0.039s
+2026-10-31 15:12:22,860 | INFO     | src.context_builder | run=77bcb29a | Context: 4 text items, 1 images, 1 dropped, 2806 chars
+2026-10-31 15:12:22,897 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 1 image records (mode=multimodal, visual=fused, 2 below threshold) in 0.037s
+2026-10-31 15:12:22,903 | INFO     | src.context_builder | run=77bcb29a | Context: 2 text items, 1 images, 1 dropped, 1753 chars
+2026-10-31 15:12:22,939 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 1 image records (mode=multimodal, visual=fused, 2 below threshold) in 0.036s
+2026-10-31 15:12:22,945 | INFO     | src.context_builder | run=77bcb29a | Context: 3 text items, 1 images, 1 dropped, 2886 chars
+2026-10-31 15:12:22,985 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 4 below threshold) in 0.039s
+2026-10-31 15:12:22,985 | INFO     | src.context_builder | run=77bcb29a | Context: 5 text items, 0 images, 0 dropped, 2952 chars
+2026-10-31 15:12:23,031 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 1 image records (mode=multimodal, visual=fused, 2 below threshold) in 0.046s
+2026-10-31 15:12:23,034 | INFO     | src.context_builder | run=77bcb29a | Context: 4 text items, 1 images, 0 dropped, 3255 chars
+2026-10-31 15:12:23,083 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 4 below threshold) in 0.049s
+2026-10-31 15:12:23,083 | INFO     | src.context_builder | run=77bcb29a | Context: 5 text items, 0 images, 0 dropped, 3146 chars
+2026-10-31 15:12:23,157 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 2 image records (mode=multimodal, visual=fused, 0 below threshold) in 0.049s
+2026-10-31 15:12:23,165 | INFO     | src.context_builder | run=77bcb29a | Context: 3 text items, 1 images, 2 dropped, 3391 chars
+2026-10-31 15:12:23,214 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 3 below threshold) in 0.048s
+2026-10-31 15:12:23,214 | INFO     | src.context_builder | run=77bcb29a | Context: 5 text items, 0 images, 0 dropped, 2292 chars
+2026-10-31 15:12:23,257 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 3 below threshold) in 0.043s
+2026-10-31 15:12:23,258 | INFO     | src.context_builder | run=77bcb29a | Context: 5 text items, 0 images, 0 dropped, 1463 chars
+2026-10-31 15:12:23,297 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 2 image records (mode=multimodal, visual=fused, 0 below threshold) in 0.039s
+2026-10-31 15:12:23,301 | INFO     | src.context_builder | run=77bcb29a | Context: 4 text items, 1 images, 2 dropped, 3066 chars
+2026-10-31 15:12:23,339 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 2 image records (mode=multimodal, visual=fused, 0 below threshold) in 0.037s
+2026-10-31 15:12:23,342 | INFO     | src.context_builder | run=77bcb29a | Context: 3 text items, 1 images, 2 dropped, 3300 chars
+2026-10-31 15:12:23,387 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 2 image records (mode=multimodal, visual=fused, 1 below threshold) in 0.044s
+2026-10-31 15:12:23,392 | INFO     | src.context_builder | run=77bcb29a | Context: 4 text items, 1 images, 2 dropped, 2693 chars
+2026-10-31 15:12:23,430 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 1 image records (mode=multimodal, visual=fused, 1 below threshold) in 0.038s
+2026-10-31 15:12:23,435 | INFO     | src.context_builder | run=77bcb29a | Context: 2 text items, 1 images, 1 dropped, 1753 chars
+2026-10-31 15:12:23,486 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 1 image records (mode=multimodal, visual=fused, 1 below threshold) in 0.050s
+2026-10-31 15:12:23,491 | INFO     | src.context_builder | run=77bcb29a | Context: 3 text items, 1 images, 1 dropped, 3262 chars
+2026-10-31 15:12:23,537 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 4 below threshold) in 0.045s
+2026-10-31 15:12:23,537 | INFO     | src.context_builder | run=77bcb29a | Context: 4 text items, 0 images, 0 dropped, 2453 chars
+2026-10-31 15:12:23,575 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 3 below threshold) in 0.037s
+2026-10-31 15:12:23,575 | INFO     | src.context_builder | run=77bcb29a | Context: 3 text items, 0 images, 0 dropped, 3462 chars
+2026-10-31 15:12:23,620 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 3 below threshold) in 0.045s
+2026-10-31 15:12:23,621 | INFO     | src.context_builder | run=77bcb29a | Context: 3 text items, 0 images, 1 dropped, 3073 chars
+2026-10-31 15:12:23,656 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 3 below threshold) in 0.035s
+2026-10-31 15:12:23,656 | INFO     | src.context_builder | run=77bcb29a | Context: 5 text items, 0 images, 0 dropped, 3392 chars
+2026-10-31 15:12:23,696 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 3 below threshold) in 0.039s
+2026-10-31 15:12:23,696 | INFO     | src.context_builder | run=77bcb29a | Context: 4 text items, 0 images, 1 dropped, 2673 chars
+2026-10-31 15:12:23,732 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 1 image records (mode=multimodal, visual=fused, 2 below threshold) in 0.036s
+2026-10-31 15:12:23,738 | INFO     | src.context_builder | run=77bcb29a | Context: 2 text items, 1 images, 1 dropped, 1753 chars
+2026-10-31 15:12:23,774 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 1 image records (mode=multimodal, visual=fused, 2 below threshold) in 0.036s
+2026-10-31 15:12:23,780 | INFO     | src.context_builder | run=77bcb29a | Context: 3 text items, 1 images, 1 dropped, 2886 chars
+2026-10-31 15:12:23,817 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 4 below threshold) in 0.036s
+2026-10-31 15:12:23,817 | INFO     | src.context_builder | run=77bcb29a | Context: 5 text items, 0 images, 0 dropped, 2952 chars
+2026-10-31 15:12:23,857 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 3 below threshold) in 0.040s
+2026-10-31 15:12:23,857 | INFO     | src.context_builder | run=77bcb29a | Context: 4 text items, 0 images, 0 dropped, 2970 chars
+2026-10-31 15:12:23,905 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 4 below threshold) in 0.048s
+2026-10-31 15:12:23,906 | INFO     | src.context_builder | run=77bcb29a | Context: 5 text items, 0 images, 0 dropped, 3146 chars
+2026-10-31 15:12:23,954 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 1 image records (mode=multimodal, visual=fused, 1 below threshold) in 0.048s
+2026-10-31 15:12:23,960 | INFO     | src.context_builder | run=77bcb29a | Context: 3 text items, 1 images, 1 dropped, 3391 chars
+2026-10-31 15:12:24,017 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 3 below threshold) in 0.056s
+2026-10-31 15:12:24,017 | INFO     | src.context_builder | run=77bcb29a | Context: 5 text items, 0 images, 0 dropped, 2292 chars
+2026-10-31 15:12:24,064 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 3 below threshold) in 0.047s
+2026-10-31 15:12:24,064 | INFO     | src.context_builder | run=77bcb29a | Context: 5 text items, 0 images, 0 dropped, 1463 chars
+2026-10-31 15:12:24,105 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 1 image records (mode=multimodal, visual=fused, 1 below threshold) in 0.041s
+2026-10-31 15:12:24,109 | INFO     | src.context_builder | run=77bcb29a | Context: 4 text items, 1 images, 1 dropped, 3066 chars
+2026-10-31 15:12:24,148 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 1 image records (mode=multimodal, visual=fused, 1 below threshold) in 0.038s
+2026-10-31 15:12:24,151 | INFO     | src.context_builder | run=77bcb29a | Context: 3 text items, 1 images, 1 dropped, 3300 chars
+2026-10-31 15:12:24,197 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 1 image records (mode=multimodal, visual=fused, 2 below threshold) in 0.046s
+2026-10-31 15:12:24,202 | INFO     | src.context_builder | run=77bcb29a | Context: 4 text items, 1 images, 1 dropped, 2693 chars
+2026-10-31 15:12:24,240 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 1 image records (mode=multimodal, visual=fused, 1 below threshold) in 0.037s
+2026-10-31 15:12:24,246 | INFO     | src.context_builder | run=77bcb29a | Context: 2 text items, 1 images, 1 dropped, 1753 chars
+2026-10-31 15:12:24,293 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 2 below threshold) in 0.047s
+2026-10-31 15:12:24,293 | INFO     | src.context_builder | run=77bcb29a | Context: 3 text items, 0 images, 1 dropped, 3129 chars
+2026-10-31 15:12:24,331 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 4 below threshold) in 0.037s
+2026-10-31 15:12:24,331 | INFO     | src.context_builder | run=77bcb29a | Context: 4 text items, 0 images, 0 dropped, 2453 chars
+2026-10-31 15:12:24,367 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 3 below threshold) in 0.036s
+2026-10-31 15:12:24,368 | INFO     | src.context_builder | run=77bcb29a | Context: 3 text items, 0 images, 0 dropped, 3462 chars
+2026-10-31 15:12:24,413 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 3 below threshold) in 0.045s
+2026-10-31 15:12:24,414 | INFO     | src.context_builder | run=77bcb29a | Context: 3 text items, 0 images, 1 dropped, 3073 chars
+2026-10-31 15:12:24,450 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 3 below threshold) in 0.035s
+2026-10-31 15:12:24,450 | INFO     | src.context_builder | run=77bcb29a | Context: 5 text items, 0 images, 0 dropped, 3392 chars
+2026-10-31 15:12:24,493 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 3 below threshold) in 0.043s
+2026-10-31 15:12:24,493 | INFO     | src.context_builder | run=77bcb29a | Context: 4 text items, 0 images, 1 dropped, 2673 chars
+2026-10-31 15:12:24,538 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 1 image records (mode=multimodal, visual=fused, 2 below threshold) in 0.045s
+2026-10-31 15:12:24,544 | INFO     | src.context_builder | run=77bcb29a | Context: 2 text items, 1 images, 1 dropped, 1753 chars
+2026-10-31 15:12:24,580 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 1 image records (mode=multimodal, visual=fused, 2 below threshold) in 0.036s
+2026-10-31 15:12:24,586 | INFO     | src.context_builder | run=77bcb29a | Context: 3 text items, 1 images, 1 dropped, 2886 chars
+2026-10-31 15:12:24,623 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 4 below threshold) in 0.037s
+2026-10-31 15:12:24,623 | INFO     | src.context_builder | run=77bcb29a | Context: 5 text items, 0 images, 0 dropped, 2952 chars
+2026-10-31 15:12:24,663 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 3 below threshold) in 0.040s
+2026-10-31 15:12:24,664 | INFO     | src.context_builder | run=77bcb29a | Context: 4 text items, 0 images, 0 dropped, 2970 chars
+2026-10-31 15:12:24,712 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 4 below threshold) in 0.048s
+2026-10-31 15:12:24,713 | INFO     | src.context_builder | run=77bcb29a | Context: 5 text items, 0 images, 0 dropped, 3146 chars
+2026-10-31 15:12:24,760 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 2 below threshold) in 0.047s
+2026-10-31 15:12:24,761 | INFO     | src.context_builder | run=77bcb29a | Context: 4 text items, 0 images, 0 dropped, 3329 chars
+2026-10-31 15:12:24,809 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 3 below threshold) in 0.048s
+2026-10-31 15:12:24,809 | INFO     | src.context_builder | run=77bcb29a | Context: 5 text items, 0 images, 0 dropped, 2292 chars
+2026-10-31 15:12:24,853 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 3 below threshold) in 0.044s
+2026-10-31 15:12:24,853 | INFO     | src.context_builder | run=77bcb29a | Context: 5 text items, 0 images, 0 dropped, 1463 chars
+2026-10-31 15:12:24,893 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 1 image records (mode=multimodal, visual=fused, 1 below threshold) in 0.039s
+2026-10-31 15:12:24,896 | INFO     | src.context_builder | run=77bcb29a | Context: 4 text items, 1 images, 1 dropped, 3066 chars
+2026-10-31 15:12:24,935 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 1 image records (mode=multimodal, visual=fused, 1 below threshold) in 0.038s
+2026-10-31 15:12:24,938 | INFO     | src.context_builder | run=77bcb29a | Context: 3 text items, 1 images, 1 dropped, 3300 chars
+2026-10-31 15:12:24,984 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 1 image records (mode=multimodal, visual=fused, 2 below threshold) in 0.046s
+2026-10-31 15:12:24,989 | INFO     | src.context_builder | run=77bcb29a | Context: 4 text items, 1 images, 1 dropped, 2693 chars
+2026-10-31 15:12:25,034 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 2 below threshold) in 0.045s
+2026-10-31 15:12:25,035 | INFO     | src.context_builder | run=77bcb29a | Context: 3 text items, 0 images, 0 dropped, 1846 chars
+2026-10-31 15:12:25,083 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 2 below threshold) in 0.048s
+2026-10-31 15:12:25,083 | INFO     | src.context_builder | run=77bcb29a | Context: 3 text items, 0 images, 1 dropped, 3129 chars
+2026-10-31 15:12:25,122 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 4 below threshold) in 0.038s
+2026-10-31 15:12:25,122 | INFO     | src.context_builder | run=77bcb29a | Context: 4 text items, 0 images, 0 dropped, 2453 chars
+2026-10-31 15:12:25,159 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 3 below threshold) in 0.036s
+2026-10-31 15:12:25,159 | INFO     | src.context_builder | run=77bcb29a | Context: 3 text items, 0 images, 0 dropped, 3462 chars
+2026-10-31 15:12:25,207 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 3 below threshold) in 0.048s
+2026-10-31 15:12:25,208 | INFO     | src.context_builder | run=77bcb29a | Context: 3 text items, 0 images, 1 dropped, 3073 chars
+2026-10-31 15:12:25,244 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 3 below threshold) in 0.035s
+2026-10-31 15:12:25,244 | INFO     | src.context_builder | run=77bcb29a | Context: 5 text items, 0 images, 0 dropped, 3392 chars
+2026-10-31 15:12:25,284 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 3 below threshold) in 0.040s
+2026-10-31 15:12:25,284 | INFO     | src.context_builder | run=77bcb29a | Context: 4 text items, 0 images, 1 dropped, 2673 chars
+2026-10-31 15:12:25,322 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 3 below threshold) in 0.037s
+2026-10-31 15:12:25,322 | INFO     | src.context_builder | run=77bcb29a | Context: 3 text items, 0 images, 0 dropped, 1846 chars
+2026-10-31 15:12:25,359 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 1 image records (mode=multimodal, visual=fused, 2 below threshold) in 0.036s
+2026-10-31 15:12:25,365 | INFO     | src.context_builder | run=77bcb29a | Context: 3 text items, 1 images, 1 dropped, 2886 chars
+2026-10-31 15:12:25,403 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 4 below threshold) in 0.038s
+2026-10-31 15:12:25,403 | INFO     | src.context_builder | run=77bcb29a | Context: 5 text items, 0 images, 0 dropped, 2952 chars
+2026-10-31 15:12:25,443 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 3 below threshold) in 0.040s
+2026-10-31 15:12:25,444 | INFO     | src.context_builder | run=77bcb29a | Context: 4 text items, 0 images, 0 dropped, 2970 chars
+2026-10-31 15:12:25,496 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 4 below threshold) in 0.052s
+2026-10-31 15:12:25,497 | INFO     | src.context_builder | run=77bcb29a | Context: 5 text items, 0 images, 0 dropped, 3146 chars
+2026-10-31 15:12:25,552 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 2 below threshold) in 0.055s
+2026-10-31 15:12:25,552 | INFO     | src.context_builder | run=77bcb29a | Context: 4 text items, 0 images, 0 dropped, 3329 chars
+2026-10-31 15:12:25,608 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 3 below threshold) in 0.056s
+2026-10-31 15:12:25,609 | INFO     | src.context_builder | run=77bcb29a | Context: 5 text items, 0 images, 0 dropped, 2292 chars
+2026-10-31 15:12:25,653 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 3 below threshold) in 0.044s
+2026-10-31 15:12:25,653 | INFO     | src.context_builder | run=77bcb29a | Context: 5 text items, 0 images, 0 dropped, 1463 chars
+2026-10-31 15:12:25,693 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 2 below threshold) in 0.039s
+2026-10-31 15:12:25,693 | INFO     | src.context_builder | run=77bcb29a | Context: 4 text items, 0 images, 1 dropped, 2874 chars
+2026-10-31 15:12:25,731 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 2 below threshold) in 0.038s
+2026-10-31 15:12:25,731 | INFO     | src.context_builder | run=77bcb29a | Context: 3 text items, 0 images, 1 dropped, 3015 chars
+2026-10-31 15:12:25,775 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 3 below threshold) in 0.044s
+2026-10-31 15:12:25,775 | INFO     | src.context_builder | run=77bcb29a | Context: 5 text items, 0 images, 0 dropped, 2743 chars
+2026-10-31 15:12:25,813 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 2 below threshold) in 0.037s
+2026-10-31 15:12:25,813 | INFO     | src.context_builder | run=77bcb29a | Context: 3 text items, 0 images, 0 dropped, 1846 chars
+2026-10-31 15:12:25,861 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 2 below threshold) in 0.048s
+2026-10-31 15:12:25,862 | INFO     | src.context_builder | run=77bcb29a | Context: 3 text items, 0 images, 1 dropped, 3129 chars
+2026-10-31 15:12:25,899 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 4 below threshold) in 0.037s
+2026-10-31 15:12:25,900 | INFO     | src.context_builder | run=77bcb29a | Context: 4 text items, 0 images, 0 dropped, 2453 chars
+2026-10-31 15:12:25,937 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 3 below threshold) in 0.037s
+2026-10-31 15:12:25,937 | INFO     | src.context_builder | run=77bcb29a | Context: 3 text items, 0 images, 0 dropped, 3462 chars
+2026-10-31 15:12:25,983 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 3 below threshold) in 0.045s
+2026-10-31 15:12:25,983 | INFO     | src.context_builder | run=77bcb29a | Context: 3 text items, 0 images, 1 dropped, 3073 chars
+2026-10-31 15:12:26,030 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 3 below threshold) in 0.040s
+2026-10-31 15:12:26,030 | INFO     | src.context_builder | run=77bcb29a | Context: 5 text items, 0 images, 0 dropped, 3392 chars
+/home/tathagata/Desktop/TEST_MULTIMODAL_RAG/.venv/lib/python3.11/site-packages/transformers/models/auto/image_processing_auto.py:517: FutureWarning: The image_processor_class argument is deprecated and will be removed in v4.42. Please use `slow_image_processor_class`, or `fast_image_processor_class` instead
+  warnings.warn(
+{
+  "text_only": {
+    "hit@5": 1.0,
+    "precision@5": 0.5765,
+    "recall@5": 0.9706,
+    "mrr": 0.9314,
+    "visual_hit": 0.0,
+    "visual_in_context": 0.0,
+    "questions_with_irrelevant_image_in_context": 0,
+    "images_in_context_total": 0,
+    "mean_retrieval_latency_s": 0.1224,
+    "n_answerable": 17,
+    "n_visual_questions": 8
+  },
+  "multimodal_pixel": {
+    "hit@5": 1.0,
+    "precision@5": 0.5765,
+    "recall@5": 0.9706,
+    "mrr": 0.9314,
+    "visual_hit": 1.0,
+    "visual_in_context": 0.75,
+    "questions_with_irrelevant_image_in_context": 11,
+    "images_in_context_total": 18,
+    "mean_retrieval_latency_s": 0.04,
+    "n_answerable": 17,
+    "n_visual_questions": 8
+  },
+  "multimodal_fused_ungated": {
+    "hit@5": 1.0,
+    "precision@5": 0.5765,
+    "recall@5": 0.9706,
+    "mrr": 0.9314,
+    "visual_hit": 1.0,
+    "visual_in_context": 0.75,
+    "questions_with_irrelevant_image_in_context": 11,
+    "images_in_context_total": 18,
+    "mean_retrieval_latency_s": 0.0452,
+    "n_answerable": 17,
+    "n_visual_questions": 8
+  },
+  "multimodal_fused_gated@0.4": {
+    "hit@5": 1.0,
+    "precision@5": 0.5765,
+    "recall@5": 0.9706,
+    "mrr": 0.9314,
+    "visual_hit": 0.75,
+    "visual_in_context": 0.75,
+    "questions_with_irrelevant_image_in_context": 0,
+    "images_in_context_total": 6,
+    "mean_retrieval_latency_s": 0.0448,
+    "n_answerable": 17,
+    "n_visual_questions": 8
+  },
+  "multimodal_fused_gated@0.3": {
+    "hit@5": 1.0,
+    "precision@5": 0.5765,
+    "recall@5": 0.9706,
+    "mrr": 0.9314,
+    "visual_hit": 0.75,
+    "visual_in_context": 0.75,
+    "questions_with_irrelevant_image_in_context": 5,
+    "images_in_context_total": 11,
+    "mean_retrieval_latency_s": 0.0424,
+    "n_answerable": 17,
+    "n_visual_questions": 8
+  },
+  "multimodal_fused_gated@0.35": {
+    "hit@5": 1.0,
+    "precision@5": 0.5765,
+    "recall@5": 0.9706,
+    "mrr": 0.9314,
+    "visual_hit": 0.75,
+    "visual_in_context": 0.75,
+    "questions_with_irrelevant_image_in_context": 1,
+    "images_in_context_total": 7,
+    "mean_retrieval_latency_s": 0.0418,
+    "n_answerable": 17,
+    "n_visual_questions": 8
+  },
+  "multimodal_fused_gated@0.45": {
+    "hit@5": 1.0,
+    "precision@5": 0.5765,
+    "recall@5": 0.9706,
+    "mrr": 0.9314,
+    "visual_hit": 0.625,
+    "visual_in_context": 0.625,
+    "questions_with_irrelevant_image_in_context": 0,
+    "images_in_context_total": 5,
+    "mean_retrieval_latency_s": 0.0423,
+    "n_answerable": 17,
+    "n_visual_questions": 8
+  },
+  "multimodal_fused_gated@0.5": {
+    "hit@5": 1.0,
+    "precision@5": 0.5765,
+    "recall@5": 0.9706,
+    "mrr": 0.9314,
+    "visual_hit": 0.125,
+    "visual_in_context": 0.125,
+    "questions_with_irrelevant_image_in_context": 0,
+    "images_in_context_total": 1,
+    "mean_retrieval_latency_s": 0.0424,
+    "n_answerable": 17,
+    "n_visual_questions": 8
+  }
+}
+Loading checkpoint shards:   0%|          | 0/2 [00:00<?, ?it/s]Loading checkpoint shards:  50%|█████     | 1/2 [00:00<00:00,  7.45it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  8.21it/s]Loading checkpoint shards: 100%|██████████| 2/2 [00:00<00:00,  8.08it/s]
+2026-10-31 15:12:26,744 | INFO     | src.generator | run=77bcb29a | Loaded microsoft/Phi-3-vision-128k-instruct (cpu, bfloat16) in 0.7s
+The `seen_tokens` attribute is deprecated and will be removed in v4.41. Use the `cache_position` model input instead.
+You are not running the flash-attention implementation, expect numerical differences.
+2026-10-31 15:14:23,057 | INFO     | src.generator | run=77bcb29a | Generated 110 tokens from 940 input tokens in 116.3s
+2026-10-31 15:14:23,057 | INFO     | src.pipeline | run=77bcb29a | Query done in 117.1s: 5 evidence items, 0 citations, insufficient=False
+2026-10-31 15:14:23,058 | INFO     | src.evaluation | run=77bcb29a | [q01] keywords=0.5 cites_relevant=False abstained=False total=117s
+2026-10-31 15:14:23,105 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 3 below threshold) in 0.047s
+2026-10-31 15:14:23,105 | INFO     | src.context_builder | run=77bcb29a | Context: 4 text items, 0 images, 1 dropped, 2673 chars
+2026-10-31 15:16:23,638 | INFO     | src.generator | run=77bcb29a | Generated 200 tokens from 764 input tokens in 120.5s
+2026-10-31 15:16:23,638 | INFO     | src.pipeline | run=77bcb29a | Query done in 120.6s: 4 evidence items, 3 citations, insufficient=False
+2026-10-31 15:16:23,639 | INFO     | src.evaluation | run=77bcb29a | [q02] keywords=0.5 cites_relevant=False abstained=False total=121s
+2026-10-31 15:16:23,706 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 1 image records (mode=multimodal, visual=fused, 2 below threshold) in 0.066s
+2026-10-31 15:16:23,715 | INFO     | src.context_builder | run=77bcb29a | Context: 2 text items, 1 images, 1 dropped, 1753 chars
+/home/tathagata/.cache/huggingface/modules/transformers_modules/microsoft/Phi-3-vision-128k-instruct/ed2772fabe9dc9acd0caad54b62761d92520cc44/image_embedding_phi3_v.py:197: UserWarning: Phi-3-V modifies `input_ids` in-place and the tokens indicating images will be removed after model forward. If your workflow requires multiple forward passes on the same `input_ids`, please make a copy of `input_ids` before passing it to the model.
+  warnings.warn(
+2026-10-31 15:19:42,811 | INFO     | src.generator | run=77bcb29a | Generated 138 tokens from 1393 input tokens in 199.1s
+2026-10-31 15:19:42,811 | INFO     | src.pipeline | run=77bcb29a | Query done in 199.2s: 3 evidence items, 2 citations, insufficient=True
+2026-10-31 15:19:42,812 | INFO     | src.evaluation | run=77bcb29a | [q03] keywords=1.0 cites_relevant=True abstained=True total=199s
+2026-10-31 15:19:42,870 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 1 image records (mode=multimodal, visual=fused, 2 below threshold) in 0.057s
+2026-10-31 15:19:42,881 | INFO     | src.context_builder | run=77bcb29a | Context: 3 text items, 1 images, 1 dropped, 2886 chars
+2026-10-31 15:23:12,335 | INFO     | src.generator | run=77bcb29a | Generated 48 tokens from 1689 input tokens in 209.4s
+2026-10-31 15:23:12,336 | INFO     | src.pipeline | run=77bcb29a | Query done in 209.5s: 4 evidence items, 0 citations, insufficient=False
+2026-10-31 15:23:12,336 | INFO     | src.evaluation | run=77bcb29a | [q04] keywords=1.0 cites_relevant=False abstained=False total=210s
+2026-10-31 15:23:12,392 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 4 below threshold) in 0.055s
+2026-10-31 15:23:12,392 | INFO     | src.context_builder | run=77bcb29a | Context: 5 text items, 0 images, 0 dropped, 2952 chars
+2026-10-31 15:24:46,966 | INFO     | src.generator | run=77bcb29a | Generated 15 tokens from 914 input tokens in 94.6s
+2026-10-31 15:24:46,966 | INFO     | src.pipeline | run=77bcb29a | Query done in 94.6s: 5 evidence items, 0 citations, insufficient=True
+2026-10-31 15:24:46,967 | INFO     | src.evaluation | run=77bcb29a | [q05] keywords=0.0 cites_relevant=False abstained=True total=95s
+2026-10-31 15:24:47,042 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 3 below threshold) in 0.075s
+2026-10-31 15:24:47,043 | INFO     | src.context_builder | run=77bcb29a | Context: 4 text items, 0 images, 0 dropped, 2970 chars
+2026-10-31 15:26:42,714 | INFO     | src.generator | run=77bcb29a | Generated 63 tokens from 958 input tokens in 115.7s
+2026-10-31 15:26:42,715 | INFO     | src.pipeline | run=77bcb29a | Query done in 115.7s: 4 evidence items, 1 citations, insufficient=False
+2026-10-31 15:26:42,715 | INFO     | src.evaluation | run=77bcb29a | [q06] keywords=1.0 cites_relevant=True abstained=False total=116s
+2026-10-31 15:26:42,793 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 4 below threshold) in 0.077s
+2026-10-31 15:26:42,793 | INFO     | src.context_builder | run=77bcb29a | Context: 5 text items, 0 images, 0 dropped, 3146 chars
+2026-10-31 15:29:00,066 | INFO     | src.generator | run=77bcb29a | Generated 77 tokens from 1029 input tokens in 137.3s
+2026-10-31 15:29:00,066 | INFO     | src.pipeline | run=77bcb29a | Query done in 137.4s: 5 evidence items, 4 citations, insufficient=False
+2026-10-31 15:29:00,067 | INFO     | src.evaluation | run=77bcb29a | [q07] keywords=1.0 cites_relevant=True abstained=False total=137s
+2026-10-31 15:29:00,136 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 2 below threshold) in 0.069s
+2026-10-31 15:29:00,137 | INFO     | src.context_builder | run=77bcb29a | Context: 4 text items, 0 images, 0 dropped, 3329 chars
+2026-10-31 15:31:06,470 | INFO     | src.generator | run=77bcb29a | Generated 66 tokens from 1087 input tokens in 126.3s
+2026-10-31 15:31:06,470 | INFO     | src.pipeline | run=77bcb29a | Query done in 126.4s: 4 evidence items, 2 citations, insufficient=False
+2026-10-31 15:31:06,470 | INFO     | src.evaluation | run=77bcb29a | [q08] keywords=1.0 cites_relevant=True abstained=False total=126s
+2026-10-31 15:31:06,534 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 3 below threshold) in 0.062s
+2026-10-31 15:31:06,534 | INFO     | src.context_builder | run=77bcb29a | Context: 5 text items, 0 images, 0 dropped, 2292 chars
+2026-10-31 15:33:34,487 | INFO     | src.generator | run=77bcb29a | Generated 200 tokens from 843 input tokens in 147.9s
+2026-10-31 15:33:34,488 | INFO     | src.pipeline | run=77bcb29a | Query done in 148.0s: 5 evidence items, 1 citations, insufficient=False
+2026-10-31 15:33:34,489 | INFO     | src.evaluation | run=77bcb29a | [q09] keywords=1.0 cites_relevant=True abstained=False total=148s
+2026-10-31 15:33:34,573 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 3 below threshold) in 0.082s
+2026-10-31 15:33:34,573 | INFO     | src.context_builder | run=77bcb29a | Context: 5 text items, 0 images, 0 dropped, 1463 chars
+2026-10-31 15:35:25,247 | INFO     | src.generator | run=77bcb29a | Generated 200 tokens from 626 input tokens in 110.7s
+2026-10-31 15:35:25,247 | INFO     | src.pipeline | run=77bcb29a | Query done in 110.8s: 5 evidence items, 3 citations, insufficient=False
+2026-10-31 15:35:25,248 | INFO     | src.evaluation | run=77bcb29a | [q10] keywords=1.0 cites_relevant=True abstained=False total=111s
+2026-10-31 15:35:25,315 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 1 image records (mode=multimodal, visual=fused, 1 below threshold) in 0.067s
+2026-10-31 15:35:25,324 | INFO     | src.context_builder | run=77bcb29a | Context: 4 text items, 1 images, 1 dropped, 3066 chars
+2026-10-31 15:39:45,614 | INFO     | src.generator | run=77bcb29a | Generated 39 tokens from 2102 input tokens in 260.3s
+2026-10-31 15:39:45,615 | INFO     | src.pipeline | run=77bcb29a | Query done in 260.4s: 5 evidence items, 1 citations, insufficient=False
+2026-10-31 15:39:45,615 | INFO     | src.evaluation | run=77bcb29a | [q11] keywords=1.0 cites_relevant=True abstained=False total=260s
+2026-10-31 15:39:45,677 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 1 image records (mode=multimodal, visual=fused, 1 below threshold) in 0.059s
+2026-10-31 15:39:45,683 | INFO     | src.context_builder | run=77bcb29a | Context: 3 text items, 1 images, 1 dropped, 3300 chars
+2026-10-31 15:43:55,416 | INFO     | src.generator | run=77bcb29a | Generated 200 tokens from 1626 input tokens in 249.7s
+2026-10-31 15:43:55,417 | INFO     | src.pipeline | run=77bcb29a | Query done in 249.8s: 4 evidence items, 1 citations, insufficient=False
+2026-10-31 15:43:55,417 | INFO     | src.evaluation | run=77bcb29a | [q12] keywords=1.0 cites_relevant=True abstained=False total=250s
+2026-10-31 15:43:55,472 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 1 image records (mode=multimodal, visual=fused, 2 below threshold) in 0.054s
+2026-10-31 15:43:55,481 | INFO     | src.context_builder | run=77bcb29a | Context: 4 text items, 1 images, 1 dropped, 2693 chars
+2026-10-31 15:48:16,259 | INFO     | src.generator | run=77bcb29a | Generated 140 tokens from 1956 input tokens in 260.8s
+2026-10-31 15:48:16,262 | INFO     | src.pipeline | run=77bcb29a | Query done in 260.8s: 5 evidence items, 1 citations, insufficient=False
+2026-10-31 15:48:16,263 | INFO     | src.evaluation | run=77bcb29a | [q13] keywords=1.0 cites_relevant=True abstained=False total=261s
+2026-10-31 15:48:16,325 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 1 image records (mode=multimodal, visual=fused, 1 below threshold) in 0.062s
+2026-10-31 15:48:16,335 | INFO     | src.context_builder | run=77bcb29a | Context: 2 text items, 1 images, 1 dropped, 1753 chars
+2026-10-31 15:51:48,605 | INFO     | src.generator | run=77bcb29a | Generated 200 tokens from 1395 input tokens in 212.3s
+2026-10-31 15:51:48,605 | INFO     | src.pipeline | run=77bcb29a | Query done in 212.3s: 3 evidence items, 0 citations, insufficient=False
+2026-10-31 15:51:48,606 | INFO     | src.evaluation | run=77bcb29a | [q14] keywords=0.667 cites_relevant=False abstained=False total=212s
+2026-10-31 15:51:48,669 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 2 below threshold) in 0.063s
+2026-10-31 15:51:48,670 | INFO     | src.context_builder | run=77bcb29a | Context: 3 text items, 0 images, 1 dropped, 3129 chars
+2026-10-31 15:54:10,469 | INFO     | src.generator | run=77bcb29a | Generated 200 tokens from 997 input tokens in 141.8s
+2026-10-31 15:54:10,469 | INFO     | src.pipeline | run=77bcb29a | Query done in 141.9s: 3 evidence items, 3 citations, insufficient=False
+2026-10-31 15:54:10,470 | INFO     | src.evaluation | run=77bcb29a | [q15] keywords=1.0 cites_relevant=True abstained=False total=142s
+2026-10-31 15:54:10,528 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 4 below threshold) in 0.057s
+2026-10-31 15:54:10,528 | INFO     | src.context_builder | run=77bcb29a | Context: 4 text items, 0 images, 0 dropped, 2453 chars
+2026-10-31 15:55:39,279 | INFO     | src.generator | run=77bcb29a | Generated 43 tokens from 859 input tokens in 88.7s
+2026-10-31 15:55:39,280 | INFO     | src.pipeline | run=77bcb29a | Query done in 88.8s: 4 evidence items, 3 citations, insufficient=False
+2026-10-31 15:55:39,280 | INFO     | src.evaluation | run=77bcb29a | [q16] keywords=1.0 cites_relevant=True abstained=False total=89s
+2026-10-31 15:55:39,334 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 3 below threshold) in 0.053s
+2026-10-31 15:55:39,335 | INFO     | src.context_builder | run=77bcb29a | Context: 3 text items, 0 images, 0 dropped, 3462 chars
+2026-10-31 15:57:25,023 | INFO     | src.generator | run=77bcb29a | Generated 68 tokens from 969 input tokens in 105.7s
+2026-10-31 15:57:25,023 | INFO     | src.pipeline | run=77bcb29a | Query done in 105.7s: 3 evidence items, 2 citations, insufficient=False
+2026-10-31 15:57:25,023 | INFO     | src.evaluation | run=77bcb29a | [q17] keywords=1.0 cites_relevant=True abstained=False total=106s
+2026-10-31 15:57:25,077 | INFO     | src.retriever | run=77bcb29a | Retrieved 5 text + 0 image records (mode=multimodal, visual=fused, 3 below threshold) in 0.053s
+2026-10-31 15:57:25,078 | INFO     | src.context_builder | run=77bcb29a | Context: 3 text items, 0 images, 1 dropped, 3073 chars
+2026-10-31 15:59:34,689 | INFO     | src.generator | run=77bcb29a | Generated 15 tokens from 1321 input tokens in 129.6s
+2026-10-31 15:59:34,689 | INFO     | src.pipeline | run=77bcb29a | Query done in 129.7s: 3 evidence items, 0 citations, insufficient=True
+2026-10-31 15:59:34,689 | INFO     | src.evaluation | run=77bcb29a | [q18] keywords=None cites_relevant=None abstained=True total=130s
+{
+  "n": 18,
+  "mean_keyword_coverage": 0.8628,
+  "full_keyword_coverage": 13,
+  "answers_citing_relevant_page": 12,
+  "answers_with_any_citation": 13,
+  "answers_with_invalid_citations": 0,
+  "abstention_correct": 16,
+  "mean_input_tokens": 1192.6667,
+  "mean_output_tokens": 112.3333,
+  "cold_query_latency_s": [
+    117.068
+  ],
+  "warm_query_latency_mean_s": 159.507,
+  "warm_query_latency_max_s": 260.845,
+  "mean_generate_s": 157.0363,
+  "peak_rss_gb": 14.91,
+  "evaluated_at": "2026-10-31T09:42:18+00:00"
+}

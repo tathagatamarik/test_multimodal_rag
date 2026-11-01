@@ -1,0 +1,19 @@
+{
+  "n": 18,
+  "mean_keyword_coverage": 0.8628,
+  "full_keyword_coverage": 13,
+  "answers_citing_relevant_page": 12,
+  "answers_with_any_citation": 13,
+  "answers_with_invalid_citations": 0,
+  "abstention_correct": 16,
+  "mean_input_tokens": 1192.6667,
+  "mean_output_tokens": 112.3333,
+  "cold_query_latency_s": [
+    117.068
+  ],
+  "warm_query_latency_mean_s": 159.507,
+  "warm_query_latency_max_s": 260.845,
+  "mean_generate_s": 157.0363,
+  "peak_rss_gb": 14.91,
+  "evaluated_at": "2026-10-31T09:42:18+00:00"
+}

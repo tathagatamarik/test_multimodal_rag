@@ -1,0 +1,18 @@
+# Verified on Python 3.11.18, Linux x86_64, CPU only (see README "Tested environment").
+#
+# Packages our code imports - exactly the assignment's allow-list
+# (io is standard library):
+torch==2.5.1               # CPU wheel: pip install torch==2.5.1 --index-url https://download.pytorch.org/whl/cpu
+transformers==4.45.2       # Phi-3-V remote code needs < 4.47 (uses DynamicCache.seen_tokens / get_max_length)
+chromadb==1.5.9
+numpy==2.2.6
+pymupdf==2.0               # provides the `fitz` module
+pillow==13.0.0             # provides `PIL`
+requests==2.34.2
+
+# Runtime requirements of the mandated models' own remote code (trust_remote_code).
+# Our code never imports these; the models fail to load without them:
+torchvision==0.20.1        # Phi-3-V image processor (microsoft/Phi-3-vision-128k-instruct)
+timm==1.0.30               # Jina CLIP EVA vision tower (jinaai/jina-clip-implementation)
+einops==0.8.2              # Jina CLIP rotary embeddings
+accelerate==1.15.0         # enables low_cpu_mem_usage loading of the 4.2B Phi-3-V weights

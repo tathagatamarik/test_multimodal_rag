@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Multimodal RAG Technical Handover</title>
+<link rel="stylesheet" href="print.css">
+<style>@page { @bottom-left { content: "Multimodal RAG - Technical Handover"; } } @page :first { @bottom-left { content: none; } }</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#5a6573"/>
+    </marker>
+  </defs>
+</svg>
+
+<section class="cover">
+  <div class="band">
+    <div class="kicker">Technical handover</div>
+    <h1>Multimodal RAG over "Attention Is All You Need"</h1>
+    <div class="subtitle">A question-answering system that retrieves text, figures and tables from the paper and answers with cited evidence, using Phi-3-Vision, Jina CLIP v1 and ChromaDB.</div>
+  </div>
+  <div class="meta">
+    <table>
+      <tr><td>Document</td><td>Technical handover, version 1.0</td></tr>
+      <tr><td>Prepared by</td><td>Tathagata</td></tr>
+      <tr><td>Date</td><td>1 November 2026</td></tr>
+      <tr><td>Status</td><td>Delivered; validated on CPU</td></tr>
+    </table>
+  </div>
+</section>
+
+<h1>1. Summary</h1>
+<p>The delivered system answers natural-language questions about the NeurIPS 2017 paper "Attention Is All You Need". It retrieves the relevant passages and, where useful, the relevant figure or table image, then generates a short answer with citations to evidence tags and page numbers. All models run locally; no external API or key is required.</p>
+
+<div class="two">
+  <div class="ok">
+    <span class="label">Validated results (18 test questions)</span>
+    <ul>
+      <li>A relevant passage was retrieved in the top 5 for every answerable question.</li>
+      <li>14 of 17 answerable questions answered correctly, 1 partly.</li>
+      <li>The out-of-scope question was correctly declined.</li>
+      <li>No irrelevant image was attached to any answer.</li>
+    </ul>
+  </div>
+  <div class="warn">
+    <span class="label">Points to note</span>
+    <ul>
+      <li>On CPU an answer takes 1 to 5 minutes (mean about 2 min 45 s). A GPU is recommended for interactive use.</li>
+      <li>One answer misread a diagram and one passage was missed.</li>
+      <li>Tuning and evaluation used the same 18 questions, so results are likely optimistic.</li>
+    </ul>
+  </div>
+</div>
+
+<h2>Scope delivered</h2>
+<table>
+  <tr><th>Deliverable</th><th>Location</th></tr>
+  <tr><td>Executed solution notebook</td><td><code>notebooks/multimodal_rag_solution.ipynb</code></td></tr>
+  <tr><td>Core source code (assignment dependency rules)</td><td><code>src/</code></td></tr>
+  <tr><td>Optional services: REST API, web UI, monitoring dashboard, MLflow tracking</td><td><code>services/</code></td></tr>
+  <tr><td>Automated tests</td><td><code>tests/</code></td></tr>
+  <tr><td>Evaluation set, pipeline, report and raw results (4 runs)</td><td><code>data/sample_queries.json</code>, <code>src/evaluation.py</code>, <code>docs/evaluation_report.md</code>, <code>artifacts/evaluation/</code></td></tr>
+  <tr><td>Documentation</td><td><code>README.md</code>, <code>docs/design.md</code>, <code>docs/ingestion.md</code>, <code>docs/monitoring.md</code></td></tr>
+  <tr><td>Sample outputs</td><td><code>examples/example_outputs.md</code></td></tr>
+  <tr><td>Dependency specifications</td><td><code>requirements.txt</code>, <code>requirements-services.txt</code>, <code>requirements-dev.txt</code></td></tr>
+</table>
+
+<h1 class="chapter">2. Architecture</h1>
+<figure>
+<svg viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg">
+  <text class="lane" x="10" y="16">INGESTION (OFFLINE, PER DOCUMENT)</text>
+  <rect class="box alt" x="10" y="30" width="130" height="48" rx="4"/><text class="bt" x="75" y="50">PDF documents</text><text class="bs" x="75" y="67">file, folder, inbox, API</text>
+  <rect class="box" x="160" y="30" width="130" height="48" rx="4"/><text class="bt" x="225" y="50">Validate and parse</text><text class="bs" x="225" y="67">layout-aware, sections</text>
+  <rect class="box" x="310" y="30" width="130" height="48" rx="4"/><text class="bt" x="375" y="50">Chunk and crop</text><text class="bs" x="375" y="67">text, figures, tables</text>
+  <rect class="box" x="460" y="30" width="130" height="48" rx="4"/><text class="bt" x="525" y="50">Embed</text><text class="bs" x="525" y="67">Jina CLIP v1</text>
+  <rect class="box store" x="610" y="30" width="130" height="48" rx="4"/><text class="bt" x="675" y="50">ChromaDB</text><text class="bs" x="675" y="67">vectors + registry</text>
+  <path class="arrow" d="M140,54 H158"/><path class="arrow" d="M290,54 H308"/><path class="arrow" d="M440,54 H458"/><path class="arrow" d="M590,54 H608"/>
+
+  <text class="lane" x="10" y="122">QUERY (ONLINE, PER QUESTION)</text>
+  <rect class="box alt" x="10" y="136" width="130" height="48" rx="4"/><text class="bt" x="75" y="156">Question</text><text class="bs" x="75" y="173">CLI, API, web UI</text>
+  <rect class="box" x="160" y="136" width="130" height="48" rx="4"/><text class="bt" x="225" y="156">Retrieve</text><text class="bs" x="225" y="173">top-5 text, gated image</text>
+  <rect class="box" x="310" y="136" width="130" height="48" rx="4"/><text class="bt" x="375" y="156">Build context</text><text class="bs" x="375" y="173">budgeted, labelled</text>
+  <rect class="box" x="460" y="136" width="130" height="48" rx="4"/><text class="bt" x="525" y="156">Generate</text><text class="bs" x="525" y="173">Phi-3-Vision</text>
+  <rect class="box alt" x="610" y="136" width="130" height="48" rx="4"/><text class="bt" x="675" y="156">Answer</text><text class="bs" x="675" y="173">+ checked citations</text>
+  <path class="arrow" d="M140,160 H158"/><path class="arrow" d="M290,160 H308"/><path class="arrow" d="M440,160 H458"/><path class="arrow" d="M590,160 H608"/>
+  <path class="arrow dash" d="M675,78 V100 H225 V134"/>
+
+  <text class="lane" x="10" y="228">MONITORING</text>
+  <rect class="box ops" x="610" y="242" width="130" height="48" rx="4"/><text class="bt" x="675" y="262">Telemetry</text><text class="bs" x="675" y="279">latency, tokens, quality</text>
+  <rect class="box ops" x="460" y="242" width="130" height="48" rx="4"/><text class="bt" x="525" y="262">Drift detection</text><text class="bs" x="525" y="279">PSI, KS, embeddings</text>
+  <rect class="box ops" x="310" y="242" width="130" height="48" rx="4"/><text class="bt" x="375" y="262">Dashboard, MLflow</text><text class="bs" x="375" y="279">history and alerts</text>
+  <path class="arrow" d="M675,184 V240"/><path class="arrow" d="M610,266 H592"/><path class="arrow" d="M460,266 H442"/>
+</svg>
+<figcaption>Figure 1. System overview. Ingestion and querying are decoupled: they share only the vector store and the document registry.</figcaption>
+</figure>
+
+<h2>Components</h2>
+<table>
+  <tr><th>Component</th><th>Technology</th><th>Notes</th></tr>
+  <tr><td>Generator</td><td>microsoft/Phi-3-vision-128k-instruct, revision <code>ed2772f</code></td><td>4.2B parameters, bf16, greedy decoding, at most 1 image per prompt</td></tr>
+  <tr><td>Embeddings</td><td>jinaai/jina-clip-v1, revision <code>ceb3e44</code></td><td>768-dimensional shared text and image space</td></tr>
+  <tr><td>Vector store</td><td>ChromaDB 1.5.9 (embedded, persistent)</td><td>Cosine distance; 79 records for the paper</td></tr>
+  <tr><td>PDF processing</td><td>PyMuPDF, Pillow</td><td>Layout-aware parser recovers the paper's 23 section headings</td></tr>
+  <tr><td>Runtime</td><td>Python 3.11, PyTorch 2.5.1, Transformers 4.45.2</td><td>Transformers version is pinned; the model code requires it</td></tr>
+  <tr><td>Services (optional)</td><td>FastAPI, Uvicorn, Streamlit, MLflow</td><td>Separate package; not needed by the core</td></tr>
+</table>
+
+<h2>Design highlights</h2>
+<ul>
+  <li><strong>Layout-aware parsing:</strong> section structure is recovered from typography; page numbers, footers and footnotes are separated from content, and every passage carries its section path. This improved retrieval precision from 0.577 to 0.600.</li>
+  <li><strong>Gated image retrieval:</strong> a figure or table is attached only when the combined image and caption similarity is at least 0.40. This eliminated irrelevant image attachments (11 questions to 0).</li>
+  <li><strong>Grounded answers:</strong> the model must answer only from the listed evidence and cite it. Citations are checked after generation; with no evidence the system declines without calling the model.</li>
+  <li><strong>Incremental ingestion:</strong> documents are identified by content hash; unchanged files are skipped, updated files replace old versions only after successful indexing, and interrupted ingestion is repaired on the next run.</li>
+</ul>
+
+<h1 class="chapter">3. Installation</h1>
+<h2>Requirements</h2>
+<table>
+  <tr><th>Resource</th><th>Minimum validated</th><th>Recommended</th></tr>
+  <tr><td>CPU / GPU</td><td>4-core x86 CPU, no GPU</td><td>NVIDIA GPU with 12 GB or more for interactive speed (GPU path implemented but not yet validated)</td></tr>
+  <tr><td>Memory</td><td>16 GB free RAM (peak about 15 GB during evaluation)</td><td>32 GB</td></tr>
+  <tr><td>Disk</td><td>15 GB (models about 12 GB)</td><td>25 GB</td></tr>
+  <tr><td>Software</td><td>Linux, Python 3.11</td><td>Same</td></tr>
+  <tr><td>Network</td><td>First run only: downloads the paper and model weights</td><td>Offline afterwards (<code>HF_HUB_OFFLINE=1</code>)</td></tr>
+</table>
+
+<h2>Steps</h2>
+<pre># 1. Environment
+python3.11 -m venv .venv
+.venv/bin/pip install torch==2.5.1 torchvision==0.20.1 --index-url https://download.pytorch.org/whl/cpu
+.venv/bin/pip install -r requirements.txt
+.venv/bin/pip install -r requirements-services.txt     # optional: API, UI, dashboard, MLflow
+
+# 2. Build the index (downloads the paper and Jina CLIP on first run; about 21 s afterwards)
+.venv/bin/python -m src.cli index
+
+# 3. Verify
+.venv/bin/python -m unittest discover -s tests -t .    # expected: 110 tests pass, 4 skipped
+.venv/bin/python -m src.cli ask "Which optimizer was used for training?"   # downloads Phi-3-V (8.3 GB) on first run</pre>
+<p>For a GPU machine, install the CUDA build of PyTorch instead of the CPU build; the device setting <code>auto</code> selects the GPU.</p>
+
+<h1>4. Operating the system</h1>
+<h2>Services</h2>
+<table>
+  <tr><th>Service</th><th>Start command</th><th>Address</th></tr>
+  <tr><td>REST API</td><td><code>HF_HUB_OFFLINE=1 .venv/bin/uvicorn services.api:app --port 8010</code></td><td>http://localhost:8010 (interactive docs at /docs)</td></tr>
+  <tr><td>Web UI</td><td><code>.venv/bin/streamlit run services/ui.py --server.port 8501</code></td><td>http://localhost:8501</td></tr>
+  <tr><td>Monitoring dashboard</td><td><code>.venv/bin/streamlit run services/dashboard.py --server.port 8502</code></td><td>http://localhost:8502</td></tr>
+  <tr><td>MLflow</td><td><code>.venv/bin/mlflow ui --backend-store-uri sqlite:///storage/mlflow.db --port 5000</code></td><td>http://localhost:5000</td></tr>
+</table>
+<p>The web UI talks only to the API; set <code>RAG_API_URL</code> if the API is not on <code>http://localhost:8010</code>. Start the API first. The API processes one answer at a time because the generator uses most of the machine's memory; status endpoints stay responsive meanwhile. Run only one model-loading process (API, CLI or evaluation) at a time on a 16 GB machine.</p>
+
+<h2>Main API endpoints</h2>
+<table>
+  <tr><th>Endpoint</th><th>Purpose</th></tr>
+  <tr><td><code>POST /query</code></td><td>Ask a question; returns answer, evidence, citations, timings and token counts. Use <code>"generate": false</code> for retrieval only.</td></tr>
+  <tr><td><code>POST /retrieve</code></td><td>Ranked passages and images with their scores</td></tr>
+  <tr><td><code>GET /visuals/{id}</code></td><td>Image of a retrieved figure or table</td></tr>
+  <tr><td><code>GET /health</code>, <code>GET /index/status</code>, <code>GET /documents</code></td><td>Service, model and index state</td></tr>
+  <tr><td><code>POST /ingest/upload</code>, <code>POST /ingest/batch</code>, <code>GET /ingest/jobs/{id}</code>, <code>DELETE /documents/{id}</code></td><td>Add, track and remove documents</td></tr>
+  <tr><td><code>GET /metrics/summary</code>, <code>GET /monitoring/drift</code></td><td>Latency, token usage and drift</td></tr>
+</table>
+
+<h2>Adding documents</h2>
+<table>
+  <tr><th>Mode</th><th>Command</th></tr>
+  <tr><td>Single file</td><td><code>python -m src.cli ingest file paper.pdf</code></td></tr>
+  <tr><td>Batch (failures do not stop the batch)</td><td><code>python -m src.cli ingest batch a.pdf b.pdf</code></td></tr>
+  <tr><td>Folder sync (adds new, updates changed, removes deleted with --prune)</td><td><code>python -m src.cli ingest sync papers/ --prune</code></td></tr>
+  <tr><td>Streaming: watch a drop folder</td><td><code>python -m src.cli ingest watch --poll 5</code> (drop PDFs into <code>data/inbox</code>)</td></tr>
+  <tr><td>Status</td><td><code>python -m src.cli ingest status</code></td></tr>
+</table>
+<p>Only one process may write to the index at a time (enforced by a lock file). After changing the embedding model, parser, chunking or image settings, run <code>python -m src.cli ingest rebuild</code>; the system refuses to mix incompatible vectors.</p>
+
+<h2>Monitoring</h2>
+<p>Every query records latency per stage, exact input and output token counts, retrieval similarity, images used, refusals and errors in <code>storage/telemetry.db</code>. Drift is measured against the evaluation run. Recommended routine: schedule <code>python -m services.tracking log-telemetry --hours 24</code> daily, and alert when the drift status is "significant", the 95th-percentile latency exceeds its target, or the error rate is above zero.</p>
+
+<h1>5. Configuration</h1>
+<p>All settings are in <code>config/config.json</code> and are validated at start-up. The settings most likely to be adjusted:</p>
+<table>
+  <tr><th>Setting</th><th>Default</th><th>Effect</th><th>Re-index needed</th></tr>
+  <tr><td><code>retrieval.top_k_text</code></td><td>5</td><td>Passages retrieved per question</td><td>No</td></tr>
+  <tr><td><code>retrieval.min_visual_score</code></td><td>0.40</td><td>Gate for attaching an image; lower attaches more images (slower, more noise)</td><td>No</td></tr>
+  <tr><td><code>context.max_context_chars</code></td><td>3600</td><td>Text budget per prompt; larger is slower on CPU</td><td>No</td></tr>
+  <tr><td><code>context.max_images</code></td><td>1</td><td>Images per prompt; each costs about 757 tokens</td><td>No</td></tr>
+  <tr><td><code>generation.max_new_tokens</code></td><td>200</td><td>Maximum answer length</td><td>No</td></tr>
+  <tr><td><code>generation.num_crops</code></td><td>4</td><td>Image detail versus speed</td><td>No</td></tr>
+  <tr><td><code>generation.device</code>, <code>embedding.device</code></td><td>auto</td><td>CPU or GPU selection</td><td>No</td></tr>
+  <tr><td><code>chunking.parser</code></td><td>layout</td><td><code>layout</code> (structure-aware) or <code>basic</code></td><td>Yes</td></tr>
+  <tr><td><code>chunking.chunk_size_chars</code></td><td>900</td><td>Passage length</td><td>Yes</td></tr>
+  <tr><td><code>embedding.model_id</code></td><td>jina-clip-v1</td><td>Embedding model</td><td>Yes</td></tr>
+</table>
+
+<h1>6. Validation</h1>
+<p>Evaluation used 18 questions with answers verified against the paper (17 answerable, 1 out of scope), covering text, figures and tables. Four runs were recorded; run 4 is the delivered configuration. Full results: <code>docs/evaluation_report.md</code>.</p>
+<div class="two">
+<table>
+  <tr><th colspan="2">Retrieval</th></tr>
+  <tr><td>Hit rate at 5</td><td class="num">1.00</td></tr>
+  <tr><td>Precision at 5</td><td class="num">0.600</td></tr>
+  <tr><td>Recall at 5</td><td class="num">0.971</td></tr>
+  <tr><td>Mean reciprocal rank</td><td class="num">0.927</td></tr>
+  <tr><td>Correct figure/table in prompt</td><td class="num">7 of 8</td></tr>
+  <tr><td>Irrelevant images attached</td><td class="num">0</td></tr>
+</table>
+<table>
+  <tr><th colspan="2">Answers and performance</th></tr>
+  <tr><td>Correct (manual review)</td><td class="num">14 of 17</td></tr>
+  <tr><td>Partly correct / incorrect</td><td class="num">1 / 1</td></tr>
+  <tr><td>Unnecessary refusals</td><td class="num">1</td></tr>
+  <tr><td>Invalid citations</td><td class="num">0</td></tr>
+  <tr><td>Mean latency (CPU)</td><td class="num">164 s</td></tr>
+  <tr><td>Mean tokens in / out</td><td class="num">1256 / 114</td></tr>
+</table>
+</div>
+<p>Tests: 110 automated tests pass (4 skipped by design: they need the real models); the 4 real-model smoke tests pass when enabled with <code>RUN_MODEL_TESTS=1</code>. Latency figures are from a 4-core laptop CPU without a GPU.</p>
+
+<h1>7. Known limitations</h1>
+<table>
+  <tr><th>Limitation</th><th>Impact</th><th>Mitigation</th></tr>
+  <tr><td>CPU-only generation is slow</td><td>1 to 5 minutes per answer</td><td>Deploy on a GPU; reduce image detail or context budget</td></tr>
+  <tr><td>Small generator model (4.2B)</td><td>Occasional diagram misreading, loose or missing citations, verbatim copying</td><td>Larger model on GPU; keep citation checks; review answers in high-stakes use</td></tr>
+  <tr><td>Small evaluation set without held-out split</td><td>Reported quality is likely optimistic</td><td>Build a larger, independent question set before production use</td></tr>
+  <tr><td>Layout rules tuned for single-column academic PDFs</td><td>Other layouts may parse less cleanly</td><td>Use the <code>basic</code> parser or extend the rules; validate on target documents</td></tr>
+  <tr><td>No OCR</td><td>Scanned pages contribute images only</td><td>Add an OCR step if scanned documents are expected</td></tr>
+  <tr><td>Embedded, single-process vector store</td><td>One writer at a time; single machine</td><td>Client/server ChromaDB and a message queue for scale-out</td></tr>
+  <tr><td>GPU path not validated</td><td>Untested on CUDA hardware</td><td>Run the test suite and smoke tests on the target GPU</td></tr>
+</table>
+
+<h1>8. Recommended next steps</h1>
+<ol>
+  <li><strong>Validate on target hardware:</strong> run the full test suite, the real-model smoke tests and <code>python -m src.cli evaluate</code> on the production machine, ideally with a GPU.</li>
+  <li><strong>Extend the evaluation set</strong> with 50 or more questions written independently of the tuning set, including questions on the client's own documents, and re-check the 0.40 image threshold.</li>
+  <li><strong>Pilot ingestion</strong> of a representative batch of client documents with the folder sync and review parsing quality.</li>
+  <li><strong>Set up monitoring:</strong> schedule daily telemetry logging and drift alerts.</li>
+  <li><strong>Secure the API</strong> before exposing it beyond localhost: authentication, per-user rate limits and HTTPS through a reverse proxy. The current API has no authentication; uploads are capped at 50 MB per file.</li>
+</ol>
+
+<h1>9. Troubleshooting</h1>
+<table>
+  <tr><th>Symptom</th><th>Cause and fix</th></tr>
+  <tr><td>Web UI shows "API unreachable"</td><td>The API is not running or is on another port. Start it (section 4) or set <code>RAG_API_URL</code>.</td></tr>
+  <tr><td>First answer takes several minutes</td><td>Models load on first use; expected on CPU.</td></tr>
+  <tr><td><code>IndexCompatibilityError ... --rebuild</code></td><td>Indexing settings changed. Run <code>python -m src.cli ingest rebuild</code>.</td></tr>
+  <tr><td><code>Another ingestion process holds storage/ingest.lock</code></td><td>Another writer is active (API worker or folder watcher). Stop it; a lock older than 6 hours is cleared automatically.</td></tr>
+  <tr><td><code>AttributeError ... seen_tokens</code></td><td>Wrong Transformers version. Reinstall <code>transformers==4.45.2</code>.</td></tr>
+  <tr><td>Process killed or out of memory</td><td>Two model processes running at once, or less than 16 GB free. Run one at a time.</td></tr>
+  <tr><td>"New version downloaded" warning from Jina CLIP</td><td>Set <code>HF_HUB_OFFLINE=1</code> after the first run to keep the cached model code fixed.</td></tr>
+</table>
+<p>Logs are written to <code>logs/rag.log</code> (rotating). Each run has a run id, so one session can be traced through the log. Further detail is in <code>README.md</code> and the documents in <code>docs/</code>.</p>
+
+</body>
+</html>

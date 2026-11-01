@@ -1,0 +1,9 @@
+# Optional service layer (services/): API, UI, monitoring dashboard, experiment tracking.
+# Outside the assignment's allow-list on purpose; src/ never imports these.
+# Install on top of requirements.txt:  pip install -r requirements-services.txt
+fastapi==0.115.14
+uvicorn==0.32.1
+python-multipart==0.0.32
+streamlit==1.66.1
+mlflow==3.17.2
+httpx==0.28.1            # FastAPI TestClient (tests/test_api.py)

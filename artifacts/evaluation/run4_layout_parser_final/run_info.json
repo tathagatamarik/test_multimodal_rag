@@ -1,0 +1,6 @@
+{
+  "prompt_version": "v3-soft-abstain-listed-tags",
+  "parser": "layout",
+  "structure_routing": false,
+  "description": "Final configuration: layout-aware parser (ToC paths, footer/footnote/equation handling), section-path evidence labels, prompt v3, fused visual gate 0.40."
+}

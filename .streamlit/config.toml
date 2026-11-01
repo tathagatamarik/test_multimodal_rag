@@ -1,0 +1,14 @@
+# Applies when Streamlit is started from the project root (README commands).
+[server]
+maxUploadSize = 50          # MB; matches the API's MAX_UPLOAD_BYTES
+
+[client]
+toolbarMode = "minimal"     # hide developer options and the Deploy button
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+base = "light"
+primaryColor = "#1f4e79"
+font = "sans serif"
